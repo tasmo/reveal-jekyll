@@ -1,0 +1,10 @@
+_site/
+.DS_Store
+.sublime/
+**.sublime-project
+**.sublime-workspace
+node_modules/
+Gemfile.lock
+.bundle/
+**/.sass-cache/
+**.idea
