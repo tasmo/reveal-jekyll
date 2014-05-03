@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: slide
 title: "re:claim your blog engine"
 classes:
- - slide
 data:
   transition: linear
 ---

@@ -3,7 +3,6 @@ layout: default
 title: "Co-Working"
 published: true
 classes:
- - slide
 data:
   transition: linear
 ---

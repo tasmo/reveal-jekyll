@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: slide
 title: "git init"
 published: true
 classes:
- - slide
 data:
   background: "#360000"
   transition: linear

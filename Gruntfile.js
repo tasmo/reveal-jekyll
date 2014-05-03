@@ -9,13 +9,13 @@ module.exports = function(grunt) {
 				},
 				files: {
 					//'style/style.css' : 'sass/style.scss'
-					'assets/css/solarizeddark.min.css': '_sass/solarizeddark/solarizeddark.scss'
+					'assets/css/solarized.min.css': '_sass/solarized/solarized.scss'
 				}
 			}
 		},
 		watch: {
 			css: {
-				files: '_sass/solarizeddark/solarizeddark.scss',
+				files: '_sass/solarized/solarized.scss',
 				tasks: ['sass']
 			}
 		}
