@@ -27,7 +27,7 @@ description: Presentation für die RP14
 
 ## solarized variant (dark/light)
 solarized:
-  theme: dark
+  theme: light
 
 ## Reveal.initialize
 ## At the end of your page you need to initialize reveal by running the following code. Note that all config values are optional and will default as specified below.

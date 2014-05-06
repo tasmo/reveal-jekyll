@@ -10,7 +10,7 @@ data:
 <div markdown="1" class="fragment">
 Änderungen an Server übertragen ([commit][commit]):
 
-{% highlight bash linenos %}
+{% highlight bash %}
 git add -A # alle Änderungen lokal mitteilen
 git commit # die Änderungen mit Server abgleichen
 git push   # alles zum Server übertragen
@@ -20,7 +20,7 @@ git push   # alles zum Server übertragen
 <div markdown="1" class="fragment">
 Mit weiteren Computern arbeiten:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 git clone NAME@SERVER:/PFAD/PROKEKT.git PROJEKT # download
 {% endhighlight %}
 </div>
@@ -28,7 +28,7 @@ git clone NAME@SERVER:/PFAD/PROKEKT.git PROJEKT # download
 <div markdown="1" class="fragment">
 Änderungen vom Server abholen:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 git pull
 {% endhighlight %}
 </div>

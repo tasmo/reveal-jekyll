@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 
-<title>{{ page.title }}</title>
+<title>{% if post.title %}{{ post.title }} | {{ page.title }}{% else %}{{ page.title }}{% endif %}</title>
 
 <meta name="author" content="{{ site.author }}" />
 <meta name="description" content="{{ site.description }}">
@@ -12,6 +12,8 @@
 
 <link rel="stylesheet" href="/reveal.js/css/reveal.min.css">
 <link rel="stylesheet" href="/assets/css/solarized.min.css" id="theme">
+<!-- jQuery -->
+<script src="/assets/js/jquery-1.11.1.min.js"></script>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>

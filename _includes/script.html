@@ -1,43 +1,56 @@
 <script src="/reveal.js/lib/js/head.min.js"></script>
 <script src="/reveal.js/js/reveal.min.js"></script>
 
+<!-- reveal.js init -->
 <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    {% if site.reveal %}
+    {% for attr in site.reveal %}{{attr[0]}}: {% unless {attr[1]} == false or {attr[1]} == true %}'{{attr[1]}}',{% else %}{{attr[1]}},{% endunless %}
+    {% endfor %}
+    {% endif %}
 
-	// Full list of configuration options available here:
-	// https://github.com/hakimel/reveal.js#configuration
-	Reveal.initialize({
-		{% if site.reveal %}
-		{% for attr in site.reveal %}{{attr[0]}}: {% unless {attr[1]} == false or {attr[1]} == true %}'{{attr[1]}}',{% else %}{{attr[1]}},{% endunless %}
-		{% endfor %}
-		{% endif %}
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || {% if site.reveal.transition %}'{{ site.reveal.transition }}',{% else %}'default',{% endif %} // default/cube/page/concave/zoom/linear/fade/none
 
-		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-		transition: Reveal.getQueryHash().transition || {% if site.reveal.transition %}'{{ site.reveal.transition }}',{% else %}'default',{% endif %} // default/cube/page/concave/zoom/linear/fade/none
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+      // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+      { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
-		// Optional libraries used to extend on reveal.js
-		dependencies: [
-			// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-			{ src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      // Interpret Markdown in <section> elements
+      //{ src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      //{ src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 
-			// Interpret Markdown in <section> elements
-			//{ src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			//{ src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      // Syntax highlight for <code> elements
+      //{ src: '/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 
-			// Syntax highlight for <code> elements
-			//{ src: '/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      // Zoom in and out with Alt+click
+      { src: '/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 
-			// Zoom in and out with Alt+click
-			{ src: '/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 
-			// Speaker notes
-			{ src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: '/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
 
-			// Remote control your reveal.js presentation using a touch device
-			//{ src: '/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
-
-			// MathJax
-			{ src: '/reveal.js/plugin/math/math.js', async: true }
-		]
-	});
-
+      // MathJax
+      { src: '/reveal.js/plugin/math/math.js', async: true }
+    ]
+  });
 </script>
+<!-- End reveal.js init -->
+
+<!-- Fontawesome -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    //$("a[href*='youtube.com/']").prepend( $( "<i class='fa fa-youtube-play'>&nbsp;</i>" ) );
+    //$("a[href*='vimeo.com/']").prepend( $( "<i class='fa fa-vimeo-square'>&nbsp;</i>" ) );
+    //$("a[href$='/download']").prepend( $( "<i class='fa fa-cloud-download'>&nbsp;</i>" ) );
+    //$("a.download").prepend( $( "<i class='fa fa-cloud-download'>&nbsp;</i>" ) );
+    $("a.external").append( $( "<i class='fa fa-external-link'></i>" ) );
+    $("blockquote").prepend( $( "<i class='fa fa-quote-left'></i>" ) );
+  });
+</script>
+<!-- End Fontawesome -->

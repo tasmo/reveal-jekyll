@@ -6,6 +6,9 @@
  * http://tasmo.de/
 **/
 
+// ---------------------------------------------
+// Main Variables
+// Solarized base colors
 $base03:    #002b36;
 $base02:    #073642;
 $base01:    #586e75;
@@ -26,23 +29,23 @@ $green:     #859900;
 // Background of the presentation
 $backgroundColor: $base03;
 @mixin bodyBackground() {
-	background: $backgroundColor;
+  background: $backgroundColor;
 }
 
 // Primary/body text
-$mainFont: 'open_sanslight', 'Open Sans', Arial, sans-serif;
-$mainFontWeight: lighter;
+$mainFont: 'Open Sans', Arial, sans-serif;
+$mainFontWeight: 400;
 $mainFontSize: 2.1rem;
 $mainColor: $base1;
 
 // Headings
 $headingMargin: .5em 0;
-$headingFont: $mainFont;
+$headingFont: 'open_sanslight' ,'Open Sans', Arial, sans-serif;;
 $headingColor: $base2;
 $headingLineHeight: 1em;
 $headingLetterSpacing: 0.02em;
 $headingTextTransform: none;
-$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$headingTextShadow: 0px 0px 2px rgba($headingColor, .5);
 $heading1TextShadow: $headingTextShadow;
 
 // Links and actions
@@ -59,7 +62,7 @@ $codeFont: 'Source Code Pro', 'Inconsolata', monospace;
 $codeFontSize: $mainFontSize - .5rem;
 $altFont: serif;
 $italicFont: 'open_sanslight_italic', 'Open Sans', Arial, sans-serif;
-$quoteFont: 'droid_serifitalic', serif;
+$quoteFont: 'droid_serifitalic', cursive;
 
 // Theme template ------------------------------
 @import "../../reveal.js/css/theme/template/theme";
@@ -68,39 +71,58 @@ $quoteFont: 'droid_serifitalic', serif;
 @import "../mixin";
 @import "../fonts";
 // ---------------------------------------------
-
+@mixin headings($from: 1, $to: 6){
+  @for $i from $from through $to{
+    h#{$i}{
+      @content
+    }
+  }
+}
 @mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3)
 {
-	background-color: $rebase03;
-	color: $rebase1;
-	//* { color: $rebase1; }
-	body { background-color: $rebase03; }
-	.reveal {
-		background-color: $rebase03;
-		color: $rebase1;
-		h1,h2,h3,h4,h5,h6 {
-			color: $rebase2;
-			border-color: none;//$rebase0;
-		}
-		a {
-		  &:active, &:visited {
-			  color: $linkColor;
-		  }
-			&:hover {
-				color: $linkColorHover;
-			}
-		}
-		h1,h2,h3,h4,h5,h6,p,li {
-			code:first-child {
-				background: $rebase2;
-				color: $rebase03;
-				border: 0 solid $rebase2;
-			}
-		}
-		section img {
-			border: 4px solid $rebase1;
-		}
-	}
+  background-color: $rebase03;
+  color: $rebase1;
+  //* { color: $rebase1; }
+  body {
+    background-color: $rebase03;
+  }
+  .reveal {
+    background-color: $rebase03;
+    color: $rebase1;
+    text-shadow: 0 0 1px rgba($rebase1, .2);
+    -webkit-text-stroke: 1px rgba($rebase1, .2);
+    @include headings() {
+      color: $rebase2;
+      border-color: $rebase0;
+      text-shadow: $headingTextShadow;
+      a {
+        &:not(.image), &:active, &:visited {
+          color: $rebase2;
+        }
+        &:hover {
+          color: lighten($rebase2, 20% );
+        }
+      }
+    }
+    a {
+      &:not(.image), &:active, &:visited {
+        color: $rebase1;
+      }
+      &:hover {
+        color: lighten($rebase1, 20% );
+      }
+    }
+    h1,h2,h3,h4,h5,h6,p,li {
+      code:first-child {
+        background: $rebase1;
+        color: $rebase03;
+        border: 1px solid $rebase1;
+      }
+    }
+    section img {
+      border: 4px solid $rebase1;
+    }
+  }
 }
 @mixin accentize($accent) {
   a#sitelink{ background-color:$accent; }
@@ -114,21 +136,31 @@ $quoteFont: 'droid_serifitalic', serif;
 .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03) }
 .dark { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3) }
 html * {
-	color-profile: sRGB;
-	rendering-intent: auto;
+  color-profile: sRGB;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .reveal {
   font-weight: $mainFontWeight;
+  font-kerning: normal;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   p,
   ul {
     text-align: left;
-    font-weight: 300;
+    font-weight: $mainFontWeight;
   }
   pre {
     padding: 1em 1.3em 1.1em;
+    text-shadow: none;
     @include border-radius(0.4em);
-    //box-shadow: none;
   }
   h1,h2,h3,h4,h5,h6,p,li {
     code:first-child {
@@ -147,8 +179,25 @@ html * {
     padding: 0;
     word-wrap: break-word;
   }
-  .slides {
-    //top: 45%;
+  blockquote {
+    background: inherit;
+    box-shadow: none;
+    font-family: $quoteFont;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 100;
+    padding-left: 3em;
+    i.fa {
+      position:absolute;
+      font-size:2em;
+      font-style: italic;
+      line-height:1;
+      left:-.1em;
+      top:-.1em;
+    }
+    code {
+      font-size: 1.1em;
+    }
   }
   .slides>section,
   .slides>section>section {
@@ -157,6 +206,11 @@ html * {
   .slides>section {
     >h1:first-child {
       margin-top: 0;
+    }
+    &[data-background="black"] {
+      @include headings() {
+        color: $base2;
+      }
     }
     .fragment.highlight-red,
     .fragment.highlight-current-red,
@@ -202,6 +256,19 @@ html * {
       }
       color: $blue;
     }
+  }
+  // Fontawesome
+  .fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 35%;
+    font-style: normal;
+    font-weight: 200;
+    vertical-align: super;
+    line-height: 1;
+    padding-left: 0.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   // accentize
   .slides>section.yellow, .yellow{

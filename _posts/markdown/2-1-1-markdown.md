@@ -5,16 +5,6 @@ classes:
  - slide
 data:
   transition: linear
-
 ---
 
-~~~
-## Formatierte Texte so einfach wie möglich:
- 
-Damit sie jede(r) schnell
- 
-1. lesen und
-3. schreiben
- 
-kann.
-~~~
+> ...soll in seiner Grundform veröffentlicht werden können, ohne den Anschein zu erwecken, es sei mit Formatierungs&shy;befehlen versehen.

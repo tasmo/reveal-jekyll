@@ -9,21 +9,21 @@ data:
 ### Einfach Bloggen mit:
 
 <div markdown="1" class="fragment highlight-green">
-## [Markdown][Markdown]
+## [Markdown][Markdown]{: .external}
 
 #### lesbar formatierte Text-Dateien
 </div>
 
-<div markdown="1" class="fragment highlight-green">
-## [Git][Git]
-
-#### verteilte Versionsverwaltung
-</div>
-
-<div markdown="1" class="fragment highlight-green">
-## [Jekyll][Jekyll]
+<div markdown="1" class="fragment highlight-blue">
+## [Jekyll][Jekyll]{: .external}
 
 #### Generator für statische Websites
+</div>
+
+<div markdown="1" class="fragment highlight-red">
+## [Git][Git]{: .external}
+
+#### verteilte Versionsverwaltung
 </div>
 
 [Markdown]: http://markdown.de/
