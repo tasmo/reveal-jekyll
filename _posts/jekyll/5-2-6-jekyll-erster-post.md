@@ -28,4 +28,5 @@ Die Parameter im Front-matter werden vom Liquid-Template abgerufen.
 `layout:` bestimmt die Art der HTML-Seite aus dem Ordner `_layouts`.
 </div>
 <aside markdown="1" class="notes">
+Liquid is the templating engine, developed for and used by Shopify.
 </aside>

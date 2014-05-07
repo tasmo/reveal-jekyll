@@ -20,3 +20,7 @@ data:
   - YAML
   - Shell, SSH, Git
   - HTML, CSS, Javascript
+
+<aside markdown="1" class="notes">
+Externe Kommentar-Scripte
+</aside>

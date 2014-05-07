@@ -9,7 +9,7 @@ data:
 ### einfach
 
 <div markdown="1" class="fragment">
-- Texte werden mit __Markdown__ (or Textile) formatiert
+- Texte werden mit __Markdown__ (oder Textile) formatiert
 - Textdateien mit __individueller__ Ordnung
 - keine anfälligen __PHP__-Scripte
 - kein Passwort (mit Git und __SSH-Key__)
@@ -30,3 +30,7 @@ data:
 - Aussehen vollständig __anpassbar__
 - mit __Plugins__ erweiterbar
 </div>
+
+<aside markdown="1" class="notes">
+Permalinks = SEO
+</aside>

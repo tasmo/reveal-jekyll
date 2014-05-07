@@ -12,7 +12,7 @@ Es generiert mittels der [``Ruby``-Umgebung][Ruby]{: .external} aus Text-Dateien
 
 Dabei nutzt es die [`Liquid`-Sprache][Liquid]{: .external} für __Templates__. So können in Jekyll eigene Filter und Tags für kleine Aufgaben eingesetzt werden.
 
-Einstellungen werden in einer zentralen Datei `/_config.yml` gespeichert.
+Einstellungen werden in der zentralen Datei `_config.yml` gespeichert.
 
 [Ruby]: https://www.ruby-lang.org/de/
 [Liquid]: http://wiki.shopify.com/Liquid

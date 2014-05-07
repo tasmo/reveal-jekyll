@@ -22,3 +22,7 @@ Damit sie jede(r) *schnell*
  
 kann.
 ~~~
+
+<aside markdown="1" class="notes">
+Kann mit HTML gemixt werden.
+</aside>
