@@ -113,7 +113,7 @@ $quoteFont: 'droid_serifitalic', cursive;
       }
     }
     h1,h2,h3,h4,h5,h6,p,li {
-      code:first-child {
+      >code, >a>code {
         background: $rebase1;
         color: $rebase03;
         border: 1px solid $rebase1;
@@ -163,7 +163,7 @@ html * {
     @include border-radius(0.4em);
   }
   h1,h2,h3,h4,h5,h6,p,li {
-    code:first-child {
+    >code, >a>code {
       font-size: $mainFontSize;
       @include border-radius(0.15em);
       padding: 0 0.3em;
@@ -220,41 +220,38 @@ html * {
     .fragment.highlight-current-blue {
       opacity: 1;
     }
-    .fragment.highlight-red.visible {
-      * {
-        color: $red;
-      }
-      color: $red;
-    }
-    .fragment.highlight-green.visible {
-      * {
-        color: $green;
-      }
-      color: $green;
-    }
-    .fragment.highlight-blue.visible {
-      * {
-        color: $blue;
-      }
-      color: $blue;
-    }
+    .fragment.highlight-red.visible,
     .fragment.highlight-current-red.current-fragment {
       * {
         color: $red;
+        text-shadow: 0 0 1px rgba($red, .2);
+        -webkit-text-stroke: 1px rgba($red, .2);
       }
       color: $red;
+      text-shadow: 0 0 1px rgba($red, .2);
+      -webkit-text-stroke: 1px rgba($red, .2);
     }
+    .fragment.highlight-green.visible,
     .fragment.highlight-current-green.current-fragment {
       * {
         color: $green;
+        text-shadow: 0 0 1px rgba($green, .2);
+        -webkit-text-stroke: 1px rgba($green, .2);
       }
       color: $green;
+      text-shadow: 0 0 1px rgba($green, .2);
+      -webkit-text-stroke: 1px rgba($green, .2);
     }
+    .fragment.highlight-blue.visible,
     .fragment.highlight-current-blue.current-fragment {
       * {
         color: $blue;
+        text-shadow: 0 0 1px rgba($blue, .2);
+        -webkit-text-stroke: 1px rgba($blue, .2);
       }
       color: $blue;
+      text-shadow: 0 0 1px rgba($blue, .2);
+      -webkit-text-stroke: 1px rgba($blue, .2);
     }
   }
   // Fontawesome
@@ -275,48 +272,64 @@ html * {
     @include accentize($yellow);
     h1,h2,h3,h4,h5,h6,a,a:active,a:visited,code.url {
       color:$yellow;
+      text-shadow: 0 0 1px rgba($yellow, .2);
+      -webkit-text-stroke: 1px rgba($yellow, .2);
     }
   }
   .slides>section.orange, .orange{
     @include accentize($orange);
     h1,h2,h3,h4,h5,h6,a,a:active,a:visited,code.url {
       color:$orange;
+      text-shadow: 0 0 1px rgba($orange, .2);
+      -webkit-text-stroke: 1px rgba($orange, .2);
     }
   }
   .slides>section.red, .red{
     @include accentize($red);
     h1,h2,h3,h4,h5,h6,a,a:active,a:visited,code.url {
       color:$red;
+      text-shadow: 0 0 1px rgba($red, .2);
+      -webkit-text-stroke: 1px rgba($red, .2);
     }
   }
   .slides>section.magenta, .magenta{
     @include accentize($magenta);
     h1,h2,h3,h4,h5,h6,a,a:active,a:visited,code.url {
       color:$magenta;
+      text-shadow: 0 0 1px rgba($magenta, .2);
+      -webkit-text-stroke: 1px rgba($magenta, .2);
     }
   }
   .slides>section.violet, .violet{
     @include accentize($violet);
     h1,h2,h3,h4,h5,h6,a,a:active,a:visited,code.url {
       color:$violet;
+      text-shadow: 0 0 1px rgba($violet, .2);
+      -webkit-text-stroke: 1px rgba($violet, .2);
     }
   }
   .slides>section.blue, .blue{
     @include accentize($blue);
     h1,h2,h3,h4,h5,h6,a,a:active,a:visited,code.url {
       color:$blue;
+      text-shadow: 0 0 1px rgba($blue, .2);
+      -webkit-text-stroke: 1px rgba($blue, .2);
     }
   }
   .slides>section.cyan, .cyan{
     @include accentize($cyan);
     h1,h2,h3,h4,h5,h6,a,a:active,a:visited,code.url {
       color:$cyan;
+      text-shadow: 0 0 1px rgba($cyan, .2);
+      -webkit-text-stroke: 1px rgba($cyan, .2);
     }
   }
   .slides>section.green, .green{
     @include accentize($green);
     h1,h2,h3,h4,h5,h6,a,a:active,a:visited,code.url {
       color:$green;
+      text-shadow: 0 0 1px rgba($green, .2);
+      -webkit-text-stroke: 1px rgba($green, .2);
     }
   }
 }

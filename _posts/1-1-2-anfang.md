@@ -29,3 +29,9 @@ data:
 [Markdown]: http://markdown.de/
 [Git]:      http://git-scm.com/
 [Jekyll]:   http://jekyllrb.com/
+
+<aside markdown="1" class="notes">
+- Motivation
+- Background
+- Was bisher geschah
+</aside>

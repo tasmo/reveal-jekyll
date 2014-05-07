@@ -6,7 +6,7 @@ data:
   transition: linear
 ---
 
-## Willkommen in Nerdistan
+## Willkommen in Nerdistan!
 
 # Nachteile von Jekyll
 

@@ -9,15 +9,17 @@ data:
 ### einfach
 
 <div markdown="1" class="fragment">
-- kein anfälliges oder “umständliches” Admin-__Interface__
 - Texte werden mit __Markdown__ (or Textile) formatiert
 - Textdateien mit __individueller__ Ordnung
+- keine anfälligen __PHP__-Scripte
+- kein Passwort (mit Git und __SSH-Key__)
 </div>
 
 ### resourcenschonend
 
 <div markdown="1" class="fragment">
 - __statische Seiten__ werden beim Anlegen generiert
+  - läuft auch auf __schwachen Servern__
 - keine __Datenbank__
 </div>
 
