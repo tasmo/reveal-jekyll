@@ -6,9 +6,8 @@ data:
   transition: fade
 ---
 
-## Thomas Friese
+###### Erstellt mit [reveal.js](http://lab.hakim.se/reveal-js/){: .external}, [Markdown](http://markdown.de/){: .external} und [Jekyll](http://jekyllrb.com/){: .external} von:
 
-#### [@_Tasmo](https://twitter.com/_Tasmo){: .twitter}
+## [Thomas Friese](/tasmo.de/)
 
-#### Folien unter [rp14.tasmo.de](http://rp14.tasmo.de/)
-
+### [@_Tasmo](https://twitter.com/_Tasmo){: .twitter}
