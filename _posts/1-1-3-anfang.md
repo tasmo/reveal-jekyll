@@ -8,22 +8,25 @@ data:
 
 ### Einfach Bloggen mit:
 
-<div markdown="1" class="fragment highlight-green">
+<div data-fragment-index="1" markdown="1" class="fragment highlight-green">
 ## [Markdown][Markdown]{: .external}
-
+<div data-fragment-index="1" markdown="1" class="fragment">
 #### lesbar formatierte Text-Dateien
 </div>
-
-<div markdown="1" class="fragment highlight-blue">
-## [Jekyll][Jekyll]{: .external}
-
-#### Generator für statische Websites
 </div>
 
-<div markdown="1" class="fragment highlight-red">
-## [Git][Git]{: .external}
+<div data-fragment-index="2" markdown="1" class="fragment highlight-blue">
+## [Jekyll][Jekyll]{: .external}
+<div data-fragment-index="2" markdown="1" class="fragment">
+#### Generator für statische Websites
+</div>
+</div>
 
+<div data-fragment-index="3" markdown="1" class="fragment highlight-red">
+## [Git][Git]{: .external}
+<div data-fragment-index="3" markdown="1" class="fragment">
 #### verteilte Versionsverwaltung
+</div>
 </div>
 
 [Markdown]: http://markdown.de/

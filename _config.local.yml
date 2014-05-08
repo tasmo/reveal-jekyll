@@ -93,5 +93,4 @@ reveal:
   minScale: 0.2
   maxScale: 1.5
 
-include: [".htaccess"]
-exclude: ["config.rb", "package.json", "node_modules", "Gemfile", "Gruntfile.js"]
+exclude: [".htaccess", "config.rb", "package.json", "node_modules", "Gemfile", "Gruntfile.js"]

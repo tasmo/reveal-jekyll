@@ -178,6 +178,7 @@ html * {
   pre code {
     padding: 0;
     word-wrap: break-word;
+    white-space: pre-wrap;
   }
   blockquote {
     background: inherit;
@@ -266,6 +267,9 @@ html * {
     padding-left: 0.2em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .fa-twitter {
+    font-size: 100%;
   }
   // accentize
   .slides>section.yellow, .yellow{
