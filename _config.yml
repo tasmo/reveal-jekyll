@@ -1,34 +1,30 @@
 port:        4001
 timezone:    Europe/Berlin
 future:      false
-pygments:    true
+# The allowed values are 'rouge', 'pygments' or null.
+highlighter: rouge
+# markdown - Valid options are [ maruku | rdiscount | kramdown | redcarpet ]
 markdown:    kramdown
 lsi:         false
 permalink:   "/:title"
 
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: :as_char
-  toc_levels: 1..6
-  use_coderay: true
-
-coderay:
-  coderay_line_numbers: table
-  coderay_line_numbers_start: 1
-  coderay_tab_width: 4
-  coderay_bold_every: 10
-  coderay_css: class
+  smart_quotes: sbquo,lsquo,bdquo,ldquo
 
 gems:
   - jemoji
 
-author: Thomas Friese
-description: Presentation für die RP14
+title:       re:claim your blog engine
+author:      Thomas Friese
+description: Presentation für die rp14
+
+sass:
+  sass_dir:  _sass
+  style:     :compressed
 
 ## solarized variant (dark/light)
 solarized:
-  theme: dark
+  theme:     dark
 
 ## Reveal.initialize
 ## At the end of your page you need to initialize reveal by running the following code. Note that all config values are optional and will default as specified below.

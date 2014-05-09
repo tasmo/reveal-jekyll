@@ -7,4 +7,5 @@ node_modules/
 Gemfile.lock
 .bundle/
 **/.sass-cache/
-**.idea
+.sass-cache/
+.idea/

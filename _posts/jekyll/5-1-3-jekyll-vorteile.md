@@ -32,5 +32,4 @@ data:
 </div>
 
 <aside markdown="1" class="notes">
-Permalinks = SEO
 </aside>

@@ -34,7 +34,4 @@ data:
 [Jekyll]:   http://jekyllrb.com/
 
 <aside markdown="1" class="notes">
-- Motivation
-- Background
-- Was bisher geschah
 </aside>

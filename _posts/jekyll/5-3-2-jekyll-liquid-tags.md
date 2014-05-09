@@ -7,7 +7,7 @@ data:
 ---
 
 Die Parameter
-{% highlight text %}
+{% highlight markdown %}
 tags: [eins, zwei]
 {% endhighlight %}
 werden mit

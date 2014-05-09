@@ -22,5 +22,4 @@ data:
   - HTML, CSS, Javascript
 
 <aside markdown="1" class="notes">
-Externe Kommentar-Scripte
 </aside>

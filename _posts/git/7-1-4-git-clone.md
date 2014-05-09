@@ -11,9 +11,9 @@ data:
 Änderungen an Server übertragen ([commit][commit]):
 
 {% highlight bash %}
-git add -A # alle Änderungen lokal mitteilen
-git commit # die Änderungen mit Server abgleichen
-git push   # alles zum Server übertragen
+$ git add -A # alle Änderungen lokal mitteilen
+$ git commit # die Änderungen mit Server abgleichen
+$ git push   # alles zum Server übertragen
 {% endhighlight %}
 </div>
 
@@ -21,7 +21,7 @@ git push   # alles zum Server übertragen
 Mit weiteren Computern arbeiten:
 
 {% highlight bash %}
-git clone NAME@SERVER:/PFAD/PROKEKT.git PROJEKT # download
+$ git clone NAME@SERVER:/PFAD/PROKEKT.git PROJEKT # download
 {% endhighlight %}
 </div>
 
@@ -29,7 +29,7 @@ git clone NAME@SERVER:/PFAD/PROKEKT.git PROJEKT # download
 Änderungen vom Server abholen:
 
 {% highlight bash %}
-git pull
+$ git pull
 {% endhighlight %}
 </div>
 

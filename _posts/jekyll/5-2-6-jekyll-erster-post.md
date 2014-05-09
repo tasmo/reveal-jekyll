@@ -8,9 +8,9 @@ data:
 
 Datei `2014-05-07-toller-titel.md` in `_posts` oder `_drafts` anlegen.
 
-{% highlight text %}
+{% highlight markdown %}
 ---
-layout:     post
+layout:     post                # Template für Blogpost oder Seite
 title:      "Mein erster Post"
 date:       2014-05-07 15:15:00
 categories: jekyll update
