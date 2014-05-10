@@ -23,8 +23,7 @@ $ git init -bare    # leeres git repository anlegen
 Am eigenen Rechner den Arbeitsordner anlegen und initialisieren:
 
 {% highlight bash %}
-$ mkdir PROJEKT # Arbeitsordner namens "PROJEKT" anlegen
-$ cd PROKEKT    # in den Ordner wechseln
+$ cd PROKEKT    # in den Arbeitsordner namens "PROJEKT" wechseln
 $ git init      # Verzeichnis an git anmelden
 $ git remote add -f MASTER NAME@SERVER:/PFAD/PROKEKT.git
                 # Verzeichnisse verbinden
