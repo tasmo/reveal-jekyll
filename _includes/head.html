@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<title>{% if post.title %}{{ post.title }} | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<meta name="author" content="{{ site.author }}" />
+<meta name="description" content="{{ site.description }}">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="/reveal.js/css/reveal.min.css">
+<link rel="stylesheet" href="/assets/css/solarized.min.css" id="theme">
+<!-- jQuery -->
+<script src="/assets/js/jquery-1.11.1.min.js"></script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+	if( window.location.search.match( /print-pdf/gi ) ) {
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = '/reveal.js/css/print/pdf.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	}
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
