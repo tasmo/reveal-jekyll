@@ -1,8 +1,8 @@
 # reveal-jekyll
 
-Transforms Markdown files into presenrtation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](https://github.com/altercation/solarized) containing a light and a dark theme.
+Transforms Markdown files into presenrtation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](https://github.com/altercation/solarized) ([MIT License](https://github.com/altercation/solarized/blob/master/LICENSE)) containing a light and a dark theme.
 
-- [MIT License of solarized](https://github.com/altercation/solarized/blob/master/LICENSE)
+reveal-jekyll contains the third party fonts [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)) and [Font Awesome](https://github.com/FortAwesome/Font-Awesome) ([License: SIL OFL 1.1](http://fontawesome.io/license/)).
 
 ## [reveal.js](http://lab.hakim.se/reveal-js/)
 
