@@ -1,6 +1,6 @@
 # reveal-jekyll
 
-Transforms Markdown files into presenrtation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](https://github.com/altercation/solarized) ([MIT License](https://github.com/altercation/solarized/blob/master/LICENSE)) containing a light and a dark theme.
+Transforms Markdown files into presentation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](https://github.com/altercation/solarized) ([MIT License](https://github.com/altercation/solarized/blob/master/LICENSE)) containing a light and a dark theme.
 
 reveal-jekyll contains the third party fonts [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)) and [Font Awesome](https://github.com/FortAwesome/Font-Awesome) ([License: SIL OFL 1.1](http://fontawesome.io/license/)).
 
@@ -49,11 +49,11 @@ data:
 
 ### Fragments
 
-Markdown fragments must be covered in a HTML block element usung the attribute `markdown="1"`:
+Markdown fragments must be covered in a HTML block element using the attribute `markdown="1"`:
 
 ```html
 <div markdown="1" class="fragment">
-## Mardown Heading
+## Markdown Heading
  
 Fragment 1 text
 </div>
@@ -90,7 +90,7 @@ The configuration will be built at the bottom of the presentation.
 
 ### Code syntax highlighting
 
-reveal-jekyll uses [kramdown](https://github.com/gettalong/kramdown) for Markdown rendering and [rouge](https://github.com/jneen/rouge) for syntax highlighting. Below is an example with coffeescript code that will be syntax highlighted.
+reveal-jekyll uses [kramdown](https://github.com/gettalong/kramdown) for Markdown rendering and [rouge](https://github.com/jneen/rouge) for syntax highlighting. Below is an example with CoffeeScript code that will be syntax highlighted.
 
 ```coffee
 {% highlight coffee %}
@@ -108,7 +108,7 @@ math =
 
 ### Speaker Notes
 
-reveal.js comes with a speaker notes plugin which can be used to present per-slide notes in a separate browser window. The notes window also gives you a preview of the next upcoming slide so it may be helpful even if you haven't written any notes. Press the 's' key on your keyboard to open the notes window.
+reveal.js comes with a speaker notes plug-in which can be used to present per-slide notes in a separate browser window. The notes window also gives you a preview of the next upcoming slide so it may be helpful even if you haven't written any notes. Press the 's' key on your keyboard to open the notes window.
 
 Notes are defined by appending an ```<aside>``` element to a slide as seen below. You can add the ```markdown="1"``` attribute to the aside element if you prefer writing notes using Markdown.
 
@@ -131,7 +131,7 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 ### For running Jekyll:
 
 - Commander: Command-line interface constructor (Ruby)
-- Colorator: Colorizes command line output (Ruby)
+- Colorator: Colourizes command line output (Ruby)
 - Classifier: Generating related posts (Ruby)
 - Directory Watcher: Auto-regeneration of sites (Ruby)
 - Kramdown: Default Markdown engine (Ruby)
