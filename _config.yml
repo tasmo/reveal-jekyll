@@ -88,4 +88,4 @@ reveal:
   maxScale: 1.5
 
 include: [".htaccess"]
-exclude: ["package.json", "node_modules", "Gemfile", "README.md", "LICENSE"]
+exclude: ["package.json", "node_modules", "Gemfile", "README.md", "LICENSE", "reveal-jekyll.iml"]
