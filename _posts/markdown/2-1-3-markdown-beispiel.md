@@ -5,7 +5,6 @@ classes:
  - slide
 data:
   transition: linear
-
 ---
 
 ## Einfaches Beispiel in Markdown

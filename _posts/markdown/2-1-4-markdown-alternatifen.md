@@ -5,7 +5,6 @@ classes:
  - slide
 data:
   transition: linear
-
 ---
 
 ### [reStructuredText](https://de.wikipedia.org/wiki/ReStructuredText){: .external}
