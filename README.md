@@ -176,4 +176,4 @@ You can add your own extensions using the same syntax. The following properties 
 
 MIT licensed
 
-Copyright (C) 2014 Thomas Friese, http://tasmo.de
+Copyright (C) 2014 Thomas Friese, http://tasmo.rocks
