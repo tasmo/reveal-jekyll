@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: slide
 title: "Markdown"
 classes:
  - slide

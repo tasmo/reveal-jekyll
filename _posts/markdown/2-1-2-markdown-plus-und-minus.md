@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: slide
 title: "Markdown – die Sprache"
 classes:
  - slide

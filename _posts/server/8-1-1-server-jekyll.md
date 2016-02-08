@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: slide
 title: "Run, Jekyll, run"
 published: true
 classes:

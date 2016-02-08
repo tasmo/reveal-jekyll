@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: slide
 title: "Ähnliche Sprachen"
 classes:
  - slide
