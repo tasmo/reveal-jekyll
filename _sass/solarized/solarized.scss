@@ -85,7 +85,7 @@ $quoteFont: 'droid_serifitalic', cursive;
 @import "../fonts";
 @import "syntax/syntax_solarized";
 // ---------------------------------------------
-@mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3)
+@mixin rebase( $rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3 )
 {
   background-color: $rebase03;
   color: $rebase1;
@@ -96,27 +96,27 @@ $quoteFont: 'droid_serifitalic', cursive;
   .reveal {
     background-color: $rebase03;
     color: $rebase1;
-    text-shadow: 0 0 1px rgba($rebase1, .2);
-    -webkit-text-stroke: 1px rgba($rebase1, .2);
+    text-shadow: 0 0 1px rgba( $rebase1, .2 );
+    -webkit-text-stroke: 1px rgba( $rebase1, .2 );
     h1,h2,h3,h4,h5,h6 {
       color: $rebase2;
       border-color: $rebase0;
       text-shadow: $headingTextShadow;
       a {
-        &:not(.image), &:active, &:visited {
+        &:not( .image ), &:active, &:visited {
           color: $rebase2;
         }
         &:hover {
-          color: lighten($rebase2, 20% );
+          color: $linkColorHover;
         }
       }
     }
     a {
-      &:not(.image), &:active, &:visited {
-        color: $rebase1;
+      &:not( .image ), &:active, &:visited {
+        color: $linkColor;
       }
       &:hover {
-        color: lighten($rebase1, 20% );
+        color: $linkColorHover;
       }
     }
     h1,h2,h3,h4,h5,h6,p,li {
