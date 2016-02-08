@@ -8,12 +8,14 @@ lsi:         false
 permalink:   "/:title"
 
 kramdown:
-  ## for german: "sbquo,lsquo,bdquo,ldquo"
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  smart_quotes: sbquo,lsquo,bdquo,ldquo
 
-title:       presentCode
+gems:
+  - jemoji
+
+title:       re:claim your blog engine
 author:      Thomas Friese
-description: Reveal.js for Jekyll with Solarized theme
+description: Presentation für die rp14
 
 sass:
   style:     :compressed
@@ -23,11 +25,10 @@ solarized:
   theme:     dark
 
 ## Reveal.initialize
-## At the end of your page Jekyll initializes reveal by running the following code. Note that all config values are optional and will default as specified below.
-## Note that the new default vertical centering option will break compatibility with slides that were using transitions with backgrounds ("cube" and "page"). To restore the previous behavior, set "center" to "false".
+## At the end of your page you need to initialize reveal by running the following code. Note that all config values are optional and will default as specified below.
 reveal:
   ## Display controls in the bottom right corner
-  controls: true
+  controls: false
   ## Display a presentation progress bar
   progress: true
   ## Display the page number of the current slide
@@ -64,7 +65,7 @@ reveal:
   ## Opens links in an iframe preview overlay
   #previewLinks: false
   ## Transition style (default/cube/page/concave/zoom/linear/fade/none)
-  transition: linear
+  #transition: linear
   ## Transition speed (default/fast/slow)
   #transitionSpeed: default
   ## Transition style for full page slide backgrounds (default/none/slide/concave/convex/zoom)
@@ -78,8 +79,8 @@ reveal:
   ## The "normal" size of the presentation, aspect ratio will be preserved
   ## when the presentation is scaled to fit different resolutions. Can be
   ## specified using percentage units.
-  width: 1000
-  height: 920
+  width: 1200
+  height: 960
   ## Factor of the display size that should remain empty around the content
   margin: 0.1
   ## Bounds for smallest/largest possible scale to apply to content
