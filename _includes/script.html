@@ -19,13 +19,6 @@
       // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
       { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
-      // Interpret Markdown in <section> elements
-      //{ src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      //{ src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-
-      // Syntax highlight for <code> elements
-      //{ src: '/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-
       // Zoom in and out with Alt+click
       { src: '/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 
@@ -53,6 +46,8 @@
     $("a.twitter").append( $( "<i class='fa fa-twitter'></i>" ) );
     $("a.github").append( $( "<i class='fa fa-github'></i>" ) );
     $("blockquote").prepend( $( "<i class='fa fa-quote-left'></i>" ) );
+    $("a.button.lighter").click( function() { $("html.dark").removeClass("dark").addClass("light"); });
+    $("a.button.darker").click( function() { $("html.light").removeClass("light").addClass("dark"); });
   });
 </script>
 <!-- End Fontawesome -->
