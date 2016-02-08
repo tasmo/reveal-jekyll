@@ -1,6 +1,6 @@
 ---
 layout: slide
-title: "Und das machen die anderen"
+title: "Alternativen zu Jekyll"
 classes:
 data:
   transition: linear
@@ -12,4 +12,4 @@ data:
 - [Hyde](http://ringce.com/hyde){: .external} // Generator mit Python & Django
 - [noflo-jekyll](https://github.com/the-grid/noflo-jekyll){: .external} // No-Flow-basierte Reimplementation von Jekyll
 - [Using Jekyll with GitHub](https://help.github.com/articles/using-jekyll-with-pages){: .external} // GitHub nutzt Jekyll
-- [Postach.io](http://postach.io/){: .external} // Bloggen mit Markdown und Evernote
+- [Postach.io](http://postach.io/){: .external} // wurde eingestellt
