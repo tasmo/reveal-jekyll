@@ -26,9 +26,9 @@ $ brew gem jekyll       # installiert Jekyll
 {% endhighlight %}
 </div>
 <div markdown="1" class="fragment">
-#### mit OS-X-Paketmanager
+#### mit OS-X-Paketmanager:
 
-- [Ruby][Ruby download]{: .external}-Paket herunterladen und installieren
+[Ruby][Ruby download]{: .external}-Paket herunterladen und installieren:
 
 {% highlight bash %}
 $ gem install jekyll

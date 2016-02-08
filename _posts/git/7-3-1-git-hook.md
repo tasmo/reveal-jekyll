@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: slide
 title: "Alles von selbst"
 published: true
 classes:
@@ -20,6 +20,6 @@ LC_ALL="en_US.UTF-8" /.../bin/jekyll build -s \
 exit
 {% endhighlight %}
 
-`GIT_PROJEKT/hooks/post-receive`  
+`GIT_PROJEKT/hooks/post-receive`
 löst auf dem Server den Shell-Befehl `jekyll build` aus
 </div>

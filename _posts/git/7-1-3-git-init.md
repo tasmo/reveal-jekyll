@@ -5,7 +5,6 @@ published: true
 classes:
 data:
   transition: linear
-
 ---
 
 <div markdown="1" class="fragment">
