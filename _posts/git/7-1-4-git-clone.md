@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: slide
 title: "Co-Working"
 published: true
 classes:

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: slide
 title: "SSH-Key anstatt Passwort"
 published: true
 classes:
