@@ -3,4 +3,3 @@ source "http://gems.github.com"
 
 gem 'jemoji'
 gem 'kramdown'
-gem 'jekyll-coffeescript'
