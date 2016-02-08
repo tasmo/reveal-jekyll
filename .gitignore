@@ -10,3 +10,4 @@ Gemfile.lock
 .sass-cache/
 .idea/
 *.iml
+_config.local.yml
