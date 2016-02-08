@@ -200,10 +200,10 @@ AddDefaultCharset utf-8
 # | Rewrite engine                                                             |
 # ------------------------------------------------------------------------------
 
-# Turning on the rewrite engine and enabling the `FollowSymLinks` option is
+# Turning on the rewrite engine and enabling the `SymLinksIfOwnerMatch` option is
 # necessary for the following directives to work.
 
-# If your web host doesn't allow the `FollowSymlinks` option, you may need to
+# If your web host doesn't allow the `SymLinksIfOwnerMatch` option, you may need to
 # comment it out and use `Options +SymLinksIfOwnerMatch` but, be aware of the
 # performance impact: http://httpd.apache.org/docs/current/misc/perf-tuning.html#symlinks
 
@@ -211,7 +211,7 @@ AddDefaultCharset utf-8
 # http://www.rackspace.com/knowledge_center/frequently-asked-question/why-is-mod-rewrite-not-working-on-my-site
 
 <IfModule mod_rewrite.c>
-    Options +FollowSymlinks
+    Options +SymLinksIfOwnerMatch
   # Options +SymLinksIfOwnerMatch
     RewriteEngine On
 	RewriteBase /
