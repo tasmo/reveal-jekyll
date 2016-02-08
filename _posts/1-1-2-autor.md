@@ -11,3 +11,5 @@ data:
 ## [Thomas Friese](/tasmo.de/)
 
 ### [@_Tasmo](https://twitter.com/_Tasmo){: .twitter}
+
+###### Audio-Mitschnitt bei [Voice Republic](https://voicerepublic.com/venues/197/talks/191)<i class="fa fa-microphone" style="font-size:.8em;">&nbsp;</i>
