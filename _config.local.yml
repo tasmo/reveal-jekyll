@@ -1,4 +1,4 @@
-port:        4001
+port:        4002
 timezone:    Europe/Berlin
 future:      false
 # The allowed values are 'rouge', 'pygments' or null.
@@ -13,18 +13,18 @@ kramdown:
 
 gems:
   - jemoji
+  - jekyll-coffeescript
 
 title:       re:claim your blog engine
 author:      Thomas Friese
 description: Presentation für die rp14
 
 sass:
-  sass_dir:  _sass
   style:     :compressed
 
 ## solarized variant (dark/light)
 solarized:
-  theme: light
+  theme:     light
 
 ## Reveal.initialize
 ## At the end of your page you need to initialize reveal by running the following code. Note that all config values are optional and will default as specified below.
@@ -89,4 +89,4 @@ reveal:
   minScale: 0.2
   maxScale: 1.5
 
-exclude: [".htaccess", "config.rb", "package.json", "node_modules", "Gemfile", "Gruntfile.js"]
+exclude: ["package.json", "node_modules", "source", "test"]

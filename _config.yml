@@ -1,4 +1,4 @@
-port:        4001
+port:        4000
 timezone:    Europe/Berlin
 future:      false
 # The allowed values are 'rouge', 'pygments' or null.
@@ -13,13 +13,13 @@ kramdown:
 
 gems:
   - jemoji
+  - jekyll-coffeescript
 
 title:       re:claim your blog engine
 author:      Thomas Friese
 description: Presentation für die rp14
 
 sass:
-  sass_dir:  _sass
   style:     :compressed
 
 ## solarized variant (dark/light)
@@ -90,4 +90,4 @@ reveal:
   maxScale: 1.5
 
 include: [".htaccess"]
-exclude: ["config.rb", "package.json", "node_modules", "Gemfile", "Gruntfile.js"]
+exclude: ["package.json", "node_modules", "source", "test"]
