@@ -13,7 +13,6 @@ kramdown:
 
 gems:
   - jemoji
-  - jekyll-coffeescript
 
 title:       re:claim your blog engine
 author:      Thomas Friese
@@ -89,4 +88,4 @@ reveal:
   minScale: 0.2
   maxScale: 1.5
 
-exclude: ["package.json", "node_modules", "source", "test"]
+exclude: ["Gemfile", "Gemfile.lock", "source", "test", "README.md", "LICENSE"]
