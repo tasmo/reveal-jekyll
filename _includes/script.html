@@ -1,5 +1,5 @@
 <script src="/reveal.js/lib/js/head.min.js"></script>
-<script src="/reveal.js/js/reveal.min.js"></script>
+<script src="/reveal.js/js/reveal.js"></script>
 
 <!-- reveal.js init -->
 <script>
@@ -38,9 +38,13 @@
 <!-- Fontawesome -->
 <script type="text/javascript">
   $(document).ready(function() {
+    //$("a[href*='youtube.com/']").prepend( $( "<i class='fa fa-youtube-play'>&nbsp;</i>" ) );
+    //$("a[href*='vimeo.com/']").prepend( $( "<i class='fa fa-vimeo-square'>&nbsp;</i>" ) );
+    //$("a[href$='/download']").prepend( $( "<i class='fa fa-cloud-download'>&nbsp;</i>" ) );
+    //$("a.download").prepend( $( "<i class='fa fa-cloud-download'>&nbsp;</i>" ) );
     $("a.external").append( $( "<i class='fa fa-external-link'></i>" ) );
-    $("a.external,a.twitter").attr( "target","_blank" );
     $("a.twitter").append( $( "<i class='fa fa-twitter'></i>" ) );
+    $("a.github").append( $( "<i class='fa fa-github'></i>" ) );
     $("blockquote").prepend( $( "<i class='fa fa-quote-left'></i>" ) );
     $("a.button.lighter").click( function() { $("html.dark").removeClass("dark").addClass("light"); });
     $("a.button.darker").click( function() { $("html.light").removeClass("light").addClass("dark"); });
