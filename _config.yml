@@ -16,7 +16,6 @@ author:      Thomas Friese
 description: Reveal.js for Jekyll with Solarized theme
 
 sass:
-  sass_dir:  _sass
   style:     :compressed
 
 ## solarized variant (dark/light)
@@ -88,4 +87,4 @@ reveal:
   maxScale: 1.5
 
 include: [".htaccess"]
-exclude: ["package.json", "node_modules", "Gemfile", "README.md", "LICENSE", "reveal-jekyll.iml"]
+exclude: ["Gemfile", "Gemfile.lock", "source", "test", "README.md", "LICENSE"]
