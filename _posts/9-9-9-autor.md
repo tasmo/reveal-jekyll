@@ -8,8 +8,8 @@ data:
 
 ##### `$(blogging the nerd way)`
 
-## Thomas Friese
+### Thomas Friese
 
-#### [@_Tasmo](https://twitter.com/_Tasmo){: .twitter}
+##### ([@_Tasmo](https://twitter.com/_Tasmo){: .twitter})
 
-#### Vorlage für diese Presentation: [reveal-jekyll](https://github.com/tasmo/reveal-jekyll){: .github}
+#### Vorlage für diese Presentation: [reveal-jekyll](https://github.com/tasmo/reveal-jekyll/tree/rp14){: .github}
