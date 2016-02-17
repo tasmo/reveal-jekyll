@@ -17,7 +17,7 @@ categories: jekyll update
 tags:       [eins, zwei]
 ---
  
-_MARKDOWN_INHALT_
+MARKDOWN_INHALT
 {% endhighlight %}
 
 <div markdown="1" class="fragment">
