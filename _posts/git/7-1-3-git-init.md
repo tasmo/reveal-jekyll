@@ -9,7 +9,7 @@ data:
 
 <div markdown="1" class="fragment">
 Neues git-Hauptverzeichnis auf dem Server anlegen
-([remote repository](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes)):
+([remote repository](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes){: .external}):
 
 {% highlight bash %}
 $ mkdir PROJEKT.git # Projekt-Ordner namens "PROJEKT.git" anlegen

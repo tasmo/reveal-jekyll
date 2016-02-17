@@ -8,7 +8,7 @@ data:
 ---
 
 <div markdown="1" class="fragment">
-Änderungen an Server übertragen ([commit][commit]):
+Änderungen an Server übertragen ([commit][commit]{: .external}):
 
 {% highlight bash %}
 $ git add -A # alle Änderungen lokal mitteilen
