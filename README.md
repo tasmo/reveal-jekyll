@@ -2,11 +2,9 @@
 
 [![Build Status](https://travis-ci.org/tasmo/reveal-jekyll.svg?branch=gh-pages)](https://travis-ci.org/tasmo/reveal-jekyll)
 
-Transforms Markdown files into presentation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](https://github.com/altercation/solarized) ([MIT License](https://github.com/altercation/solarized/blob/master/LICENSE)) containing a light and a dark theme.
+Transforms Markdown files into presentation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](https://github.com/altercation/solarized) containing a light and a dark theme.
 
-### [DEMO presentation](http://rp14.tasmo.de)
-
-reveal-jekyll contains the third party fonts [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)) and [Font Awesome](https://github.com/FortAwesome/Font-Awesome) ([License: SIL OFL 1.1](http://fontawesome.io/license/)).
+Try the **[DEMO presentation](http://rp14.tasmo.de)**.
 
 ## [reveal.js](http://lab.hakim.se/reveal-js/)
 
@@ -176,8 +174,14 @@ You can add your own extensions using the same syntax. The following properties 
 - **callback**: [optional] Function to execute when the script has loaded
 - **condition**: [optional] Function which must return true for the script to be loaded
 
-## License
+## Licenses
 
-MIT licensed
+[Jekyll](https://github.com/jekyll/jekyll): [MIT licensed](https://github.com/jekyll/jekyll/blob/master/LICENSE)
 
-Copyright (C) 2014 Thomas Friese, http://tasmo.rocks
+[reveal.js](https://github.com/hakimel/reveal.js): [MIT licensed](https://github.com/hakimel/reveal.js/blob/master/LICENSE)  
+Copyright (C) 2016 Hakim El Hattab, http://hakim.se
+
+[reveal-jekyll](https://github.com/tasmo/reveal-jekyll) contains the third party fonts [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Font Awesome](https://github.com/FortAwesome/Font-Awesome) ([License: SIL OFL 1.1](http://fontawesome.io/license/)) and the color scheme [Solarized colors](https://github.com/altercation/solarized) ([MIT License](https://github.com/altercation/solarized/blob/master/LICENSE)).
+
+[reveal-jekyll](https://github.com/tasmo/reveal-jekyll): [MIT licensed](https://github.com/tasmo/reveal-jekyll/blob/master/LICENSE)  
+Copyright (C) 2016 Thomas Friese, http://tasmo.rocks
