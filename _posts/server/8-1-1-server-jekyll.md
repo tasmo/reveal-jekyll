@@ -23,7 +23,7 @@ $ jekyll serve -B # (--detach)
 <div markdown="1" class="fragment">
 Jekyll mit Apache braucht ein `.htaccess`-Datei
 
-{% highlight apache %}
+{% highlight conf %}
 <IfModule mod_rewrite.c>
     Options +FollowSymlinks
     RewriteEngine On
