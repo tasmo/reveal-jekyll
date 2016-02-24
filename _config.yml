@@ -87,4 +87,4 @@ reveal:
   maxScale: 1.5
 
 include: [".htaccess"]
-exclude: ["Gemfile", "Gemfile.lock", "source", "test", "README.md", "LICENSE"]
+exclude: ["Gemfile", "Gemfile.lock", "source", "test", "README.md", "LICENSE", "vendor"]
