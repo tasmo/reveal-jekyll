@@ -21,7 +21,7 @@ $ jekyll serve -B # (--detach)
 {% endhighlight %}
 </div>
 <div markdown="1" class="fragment">
-Jekyll mit Apache braucht ein `.htaccess`-Datei
+Jekyll mit Apache braucht eine `.htaccess`-Datei
 
 {% highlight conf %}
 <IfModule mod_rewrite.c>
