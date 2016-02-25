@@ -8,7 +8,7 @@ data:
 
 ##### `$(blogging the nerd way)`
 
-### Thomas Friese
+### [Thomas Friese](//tasmo.rocks)
 
 ##### ([@_Tasmo](https://twitter.com/_Tasmo){: .twitter})
 
