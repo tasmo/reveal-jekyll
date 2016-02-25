@@ -2,35 +2,35 @@
 
 [![Build Status](https://travis-ci.org/tasmo/reveal-jekyll.svg?branch=master)](https://travis-ci.org/tasmo/reveal-jekyll)
 
-Transforms Markdown files into presentation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](https://github.com/altercation/solarized) containing a light and a dark theme.
+Transforms Markdown files into presentation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](//github.com/altercation/solarized) containing a light and a dark theme.
 
-Try the **[DEMO presentation](http://rp14.tasmo.de)**.
+Try the **[DEMO presentation](//gh.tasmo.de/reveal-jekyll/)**.
 
 ## [reveal.js](http://lab.hakim.se/reveal-js/)
 
 A framework for easily creating beautiful presentations using HTML.
 
-[reveal.js](https://github.com/hakimel/reveal.js) comes with a broad range of features including [nested slides](https://github.com/hakimel/reveal.js#markup), [markdown contents](https://github.com/hakimel/reveal.js#markdown), [PDF export](https://github.com/hakimel/reveal.js#pdf-export), [speaker notes](https://github.com/hakimel/reveal.js#speaker-notes) and a [JavaScript API](https://github.com/hakimel/reveal.js#api). It's best viewed in a browser with support for CSS 3D transforms but [fallbacks](https://github.com/hakimel/reveal.js/wiki/Browser-Support) are available to make sure your presentation can still be viewed elsewhere.
+[reveal.js](//github.com/hakimel/reveal.js) comes with a broad range of features including [nested slides](//github.com/hakimel/reveal.js#markup), [markdown contents](//github.com/hakimel/reveal.js#markdown), [PDF export](//github.com/hakimel/reveal.js#pdf-export), [speaker notes](//github.com/hakimel/reveal.js#speaker-notes) and a [JavaScript API](//github.com/hakimel/reveal.js#api). It's best viewed in a browser with support for CSS 3D transforms but [fallbacks](//github.com/hakimel/reveal.js/wiki/Browser-Support) are available to make sure your presentation can still be viewed elsewhere.
 
 ### Links for reveal.js:
 
 - [Installation](#installation): Step-by-step instructions for getting reveal.js running on your computer.
-- [Changelog](https://github.com/hakimel/reveal.js/releases): Up-to-date version history.
-- [Examples](https://github.com/hakimel/reveal.js/wiki/Example-Presentations): Presentations created with reveal.js, add your own!
-- [Browser Support](https://github.com/hakimel/reveal.js/wiki/Browser-Support): Explanation of browser support and fallbacks.
-- [Instructions](https://github.com/hakimel/reveal.js#instructions) How to use reveal.js.
-- [MIT License](https://github.com/hakimel/reveal.js/blob/master/LICENSE)
+- [Changelog](//github.com/hakimel/reveal.js/releases): Up-to-date version history.
+- [Examples](//github.com/hakimel/reveal.js/wiki/Example-Presentations): Presentations created with reveal.js, add your own!
+- [Browser Support](//github.com/hakimel/reveal.js/wiki/Browser-Support): Explanation of browser support and fallbacks.
+- [Instructions](//github.com/hakimel/reveal.js#instructions) How to use reveal.js.
+- [MIT License](//github.com/hakimel/reveal.js/blob/master/LICENSE)
 
 ## [Jekyll](http://jekyllrb.com/)
 
-[Jekyll](https://github.com/jekyll/jekyll) is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind [GitHub Pages](http://pages.github.com), which you can use to host sites right from your GitHub repositories.
+[Jekyll](//github.com/jekyll/jekyll) is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind [GitHub Pages](http://pages.github.com), which you can use to host sites right from your GitHub repositories.
 
 ### Links for Jekyll:
 
-- [Getting Started](https://github.com/jekyll/jekyll#getting-started) If you don't know Jekyll yet.
-- [Runtime Dependencies](https://github.com/jekyll/jekyll#runtime-dependencies)
-- [MIT License](https://github.com/jekyll/jekyll/blob/master/LICENSE)
-- [Contributors](https://github.com/jekyll/jekyll/graphs/contributors)
+- [Getting Started](//github.com/jekyll/jekyll#getting-started) If you don't know Jekyll yet.
+- [Runtime Dependencies](//github.com/jekyll/jekyll#runtime-dependencies)
+- [MIT License](//github.com/jekyll/jekyll/blob/master/LICENSE)
+- [Contributors](//github.com/jekyll/jekyll/graphs/contributors)
 
 ## Differences and Limitations
 
@@ -92,7 +92,7 @@ The configuration will be built at the bottom of the presentation.
 
 ### Code syntax highlighting
 
-reveal-jekyll uses [kramdown](https://github.com/gettalong/kramdown) for Markdown rendering and [rouge](https://github.com/jneen/rouge) for syntax highlighting. Below is an example with CoffeeScript code that will be syntax highlighted.
+reveal-jekyll uses [kramdown](//github.com/gettalong/kramdown) for Markdown rendering and [rouge](//github.com/jneen/rouge) for syntax highlighting. Below is an example with CoffeeScript code that will be syntax highlighted.
 
 ```coffee
 {% highlight coffee %}
@@ -150,7 +150,7 @@ Reveal.js doesn't _rely_ on any third party scripts to work but a few optional l
 ```javascript
 Reveal.initialize({
   dependencies: [
-    // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+    // Cross-browser shim that fully implements classList - //github.com/eligrey/classList.js/
     { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
     // Zoom in and out with Alt+click
@@ -176,12 +176,12 @@ You can add your own extensions using the same syntax. The following properties 
 
 ## Licenses
 
-[Jekyll](https://github.com/jekyll/jekyll): [MIT licensed](https://github.com/jekyll/jekyll/blob/master/LICENSE)
+[Jekyll](//github.com/jekyll/jekyll): [MIT licensed](//github.com/jekyll/jekyll/blob/master/LICENSE)
 
-[reveal.js](https://github.com/hakimel/reveal.js): [MIT licensed](https://github.com/hakimel/reveal.js/blob/master/LICENSE)  
+[reveal.js](//github.com/hakimel/reveal.js): [MIT licensed](//github.com/hakimel/reveal.js/blob/master/LICENSE)  
 Copyright (C) 2016 Hakim El Hattab, http://hakim.se
 
-[reveal-jekyll](https://github.com/tasmo/reveal-jekyll) contains the third party fonts [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Font Awesome](https://github.com/FortAwesome/Font-Awesome) ([License: SIL OFL 1.1](http://fontawesome.io/license/)) and the color scheme [Solarized colors](https://github.com/altercation/solarized) ([MIT License](https://github.com/altercation/solarized/blob/master/LICENSE)).
+[reveal-jekyll](//github.com/tasmo/reveal-jekyll) contains the third party fonts [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Font Awesome](//github.com/FortAwesome/Font-Awesome) ([License: SIL OFL 1.1](http://fontawesome.io/license/)) and the color scheme [Solarized colors](//github.com/altercation/solarized) ([MIT License](//github.com/altercation/solarized/blob/master/LICENSE)).
 
-[reveal-jekyll](https://github.com/tasmo/reveal-jekyll): [MIT licensed](https://github.com/tasmo/reveal-jekyll/blob/master/LICENSE)  
+[reveal-jekyll](//github.com/tasmo/reveal-jekyll): [MIT licensed](//github.com/tasmo/reveal-jekyll/blob/master/LICENSE)  
 Copyright (C) 2016 Thomas Friese, http://tasmo.rocks
