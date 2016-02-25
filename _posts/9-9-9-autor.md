@@ -12,4 +12,4 @@ data:
 
 ##### ([@_Tasmo](https://twitter.com/_Tasmo){: .twitter})
 
-#### Vorlage für diese Presentation: [reveal-jekyll](https://github.com/tasmo/reveal-jekyll/tree/rp14){: .github}
+#### Vorlage für diese Presentation: [reveal-jekyll](https://github.com/tasmo/reveal-jekyll/tree/gh-pages){: .github}
