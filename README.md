@@ -4,7 +4,7 @@
 
 Transforms Markdown files into presentation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](//github.com/altercation/solarized) containing a light and a dark theme.
 
-Try the **[DEMO presentation](//gh.tasmo.de/reveal-jekyll/)**.
+Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)**.
 
 ## [reveal.js](http://lab.hakim.se/reveal-js/)
 
