@@ -1,8 +1,9 @@
 # reveal-jekyll
 
-[![Build Status](https://travis-ci.org/tasmo/reveal-jekyll.svg?branch=master)](https://travis-ci.org/tasmo/reveal-jekyll)
+Transforms Markdown files into presentation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors](//github.com/altercation/solarized) (by Ethan Schoonover) containing a light and a dark theme.  
+**reveal-jekyll** is ready for [GitHub Pages](https://pages.github.com/) :octocat:.
 
-Transforms Markdown files into presentation slides using [Jekyll](http://jekyllrb.com/). The theme is based on [Solarized colors by Ethan Schoonover](//github.com/altercation/solarized) containing a light and a dark theme.
+[![Build Status](https://travis-ci.org/tasmo/reveal-jekyll.svg?branch=master)](https://travis-ci.org/tasmo/reveal-jekyll)
 
 Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)**.
 
