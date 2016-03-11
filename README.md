@@ -5,7 +5,7 @@ Transforms Markdown files into presentation slides using [Jekyll](http://jekyllr
 
 [![Build Status](https://travis-ci.org/tasmo/reveal-jekyll.svg?branch=master)](https://travis-ci.org/tasmo/reveal-jekyll)
 
-Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)**.
+Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)** (how to use Jekyll written in german).
 
 ## [reveal.js](http://lab.hakim.se/reveal-js/)
 
