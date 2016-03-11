@@ -217,6 +217,15 @@ html * {
       font-size: 1.1em;
     }
   }
+  p > img,
+  .image {
+    display: block;
+    text-align: center;
+  }
+  iframe,
+  img {
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  }
   .slides>section,
   .slides>section>section {
     padding: 0;
