@@ -10,8 +10,8 @@ permalink:   "/:title"
 kramdown:
   smart_quotes: sbquo,lsquo,bdquo,ldquo
 
-gems:
-  - jemoji
+#gems:
+#  - jemoji
 
 title:       re:claim your blog engine
 author:      Thomas Friese
