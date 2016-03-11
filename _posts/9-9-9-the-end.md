@@ -1,6 +1,6 @@
 ---
 layout: slide
-title:
+title: ""
 data:
   background: black
 ---
