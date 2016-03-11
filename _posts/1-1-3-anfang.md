@@ -9,21 +9,21 @@ data:
 ### Einfach Bloggen mit:
 
 <div data-fragment-index="1" markdown="1" class="fragment highlight-green">
-## [Markdown](/#/3)
+## [Markdown]({{ site.url }}/#/3)
 <div data-fragment-index="1" markdown="1" class="fragment">
 #### lesbar formatierte Text-Dateien
 </div>
 </div>
 
 <div data-fragment-index="2" markdown="1" class="fragment highlight-blue">
-## [Jekyll](/#/7)
+## [Jekyll]({{ site.url }}/#/7)
 <div data-fragment-index="2" markdown="1" class="fragment">
 #### Generator für statische Websites
 </div>
 </div>
 
 <div data-fragment-index="3" markdown="1" class="fragment highlight-red">
-## [Git](/#/20)
+## [Git]({{ site.url }}/#/20)
 <div data-fragment-index="3" markdown="1" class="fragment">
 #### verteilte Versionsverwaltung
 </div>
