@@ -14,7 +14,7 @@ kramdown:
 #gems:
 #  - jemoji
 
-title:       re:claim your blog engine
+title:       reveal-jekyll
 author:      Thomas Friese
 description: Reveal.js for Jekyll with Solarized theme
 
