@@ -11,7 +11,10 @@ kramdown:
   ## for german: "sbquo,lsquo,bdquo,ldquo"
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
-title:       presentCode
+#gems:
+#  - jemoji
+
+title:       re:claim your blog engine
 author:      Thomas Friese
 description: Reveal.js for Jekyll with Solarized theme
 
