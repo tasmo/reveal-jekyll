@@ -1,6 +1,6 @@
 ---
 layout: slide
-title:
+title: ""
 ---
 
 # [Reveal.js](http://lab.hakim.se/reveal-js/){: .external}
