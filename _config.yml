@@ -89,5 +89,16 @@ reveal:
   minScale: 0.2
   maxScale: 1.5
 
-include: [".htaccess"]
-exclude: ["Gemfile", "Gemfile.lock", "source", "test", "README.md", "LICENSE", "vendor"]
+exclude: [
+  "Gemfile",
+  "Gemfile.lock",
+  "vendor",
+  "reveal.js/test",
+  "reveal.js/index.html",
+  "reveal.js/README.md",
+  "reveal.js/bower.json",
+  "reveal.js/Gruntfile.js",
+  "reveal.js/CONTRIBUTING.md",
+  "reveal.js/LICENSE",
+  "reveal.js/package.json"
+]
