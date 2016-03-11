@@ -9,7 +9,7 @@ trim_trailing_whitespace = true
 insert_final_newline = false
 charset = utf-8
 
-[*.{json,js,css,scss,yml}]
+[*.{json,js,css,scss,yml,htm,html}]
 indent_style = space
 indent_size = 2
 
