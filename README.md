@@ -107,14 +107,17 @@ math =
 
 ### Slide numbers
 
-You can show slide numbers by selecting a format in the `_config.yml` file.
-```
+You can show slide numbers by selecting a format in the `_config.yml` file:
+
+```coffee
+slideNumber:
   # Slide number formatting can be configured using these variables:
   #  "h.v":  horizontal . vertical slide number (default)
   #  "h/v":  horizontal / vertical slide number
   #    "c":  flattened slide number
   #  "c/t":  flattened slide number / total slides
   # "none":  dont't show slide numbers
+  format:    "c/t"
 ```
 
 ### Speaker Notes
@@ -139,7 +142,7 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 
 ## Runtime Dependencies
 
-### For running Jekyll:
+### For running Jekyll on your server:
 
 - Commander: Command-line interface constructor (Ruby)
 - Colorator: Colourizes command line output (Ruby)
@@ -152,6 +155,10 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 - Sass: CSS extension language (Ruby)
 - CoffeeScript: compiling to JavaScript (Ruby)
 
+### For running on GitHub pages:
+
+- `gem 'github-pages'` in your `Gemfile`
+
 ### For running reveal.js:
 
 Reveal.js doesn't _rely_ on any third party scripts to work but a few optional libraries are included by default. These libraries are loaded as dependencies in the order they appear, for example:
@@ -163,13 +170,13 @@ Reveal.initialize({
     { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
     // Zoom in and out with Alt+click
-    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'plugin/zoom-js/zoom.js', async: true },
 
     // Speaker notes
-    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'plugin/notes/notes.js', async: true },
 
     // Remote control your reveal.js presentation using a touch device
-    { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'plugin/remotes/remotes.js', async: true },
 
     // MathJax
     { src: 'plugin/math/math.js', async: true }
