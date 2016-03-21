@@ -107,7 +107,15 @@ math =
 
 ### Slide numbers
 
-- not working yet
+You can show slide numbers by selecting a format in the `_config.yml` file.
+```
+  # Slide number formatting can be configured using these variables:
+  #  "h.v":  horizontal . vertical slide number (default)
+  #  "h/v":  horizontal / vertical slide number
+  #    "c":  flattened slide number
+  #  "c/t":  flattened slide number / total slides
+  # "none":  dont't show slide numbers
+```
 
 ### Speaker Notes
 
