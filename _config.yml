@@ -13,10 +13,9 @@ kramdown:
 #gems:
 #  - jemoji
 
-## personalize your slide show
-title:       reveal-jekyll
+title:       re:claim your blog engine
 author:      Thomas Friese
-description: Reveal.js for Jekyll with Solarized Color theme
+description: Presentation für die rp14
 
 sass:
   style:     :compressed
