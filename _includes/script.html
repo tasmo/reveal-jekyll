@@ -20,10 +20,10 @@
       { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
       // Zoom in and out with Alt+click
-      { src: '/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: '/reveal.js/plugin/zoom-js/zoom.js', async: true },
 
       // Speaker notes
-      { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: '/reveal.js/plugin/notes/notes.js', async: true },
 
       // Remote control your reveal.js presentation using a touch device
       //{ src: '/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
@@ -32,6 +32,12 @@
       { src: '/reveal.js/plugin/math/math.js', async: true }
     ]
   });
+
+  {% if site.slideNumber.format and site.slideNumber.format != "none" %}
+  // Shows the slide number using default formatting
+  Reveal.configure({ slideNumber: true });
+  Reveal.configure({ slideNumber: '{{ site.slideNumber.format }}' });
+  {% endif %}
 </script>
 <!-- End reveal.js init -->
 
