@@ -1,11 +1,11 @@
 # reveal-jekyll
 
-Transforms Markdown files into presentation slides using [reveal.js](#revealjs) and [Jekyll](#jekyll). The theme is based on [Solarized colors](//github.com/altercation/solarized) (by Ethan Schoonover) containing a light and a dark theme.  
+Transforms Markdown files into presentation slides using [reveal.js](#revealjs) and [Jekyll](#jekyll). The theme is based on [Solarized Colors](//github.com/altercation/solarized) (by Ethan Schoonover) containing a light and a dark theme.  
 **reveal-jekyll** is ready for [GitHub Pages](https://pages.github.com/) :octocat:.
 
 [![Build Status](https://travis-ci.org/tasmo/reveal-jekyll.svg?branch=master)](https://travis-ci.org/tasmo/reveal-jekyll)
 
-Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)** (how to use Jekyll written in german).
+Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)** (how to use Jekyll written in German).
 
 ## [reveal.js](http://lab.hakim.se/reveal-js/)
 
@@ -45,7 +45,7 @@ layout: slide
 title: Background Transitions
 data:
   transition: linear
-  background: '#d33682'
+  background: 'red'
   background-transition: slide
 ---
 ```
@@ -69,7 +69,7 @@ Fragments can be nested.
 
 ### Vertical Slides
 
-For vertical scrolling you need to leave the `title:` blank. All content on vertical slides must be wrapped in HTML `<section>` blocks.
+For vertical scrolling you need to leave the `title:` blank. All content on vertical slides must be wrapped in HTML `<section>` blocks:
 
 ```html
 ---
@@ -87,13 +87,13 @@ title:
 
 ### Configuration
 
-All options for the reveal.js presentation are available in the `_config.yml` under `reveal:`.
+All options for the reveal.js presentation are available in the `_config.yml` as sub keys of `reveal:`.
 
-The configuration will be built at the bottom of the presentation.
+The configuration will be built in the `<script />` block at the bottom of the `index.html` presentation file.
 
 ### Code syntax highlighting
 
-reveal-jekyll uses [kramdown](//github.com/gettalong/kramdown) for Markdown rendering and [rouge](//github.com/jneen/rouge) for syntax highlighting. Below is an example with CoffeeScript code that will be syntax highlighted.
+reveal-jekyll uses [kramdown](//github.com/gettalong/kramdown) for Markdown rendering and [rouge](//github.com/jneen/rouge) for syntax highlighting. Below is an example with CoffeeScript code that will be syntax highlighted:
 
 ```coffee
 {% highlight coffee %}
@@ -116,7 +116,7 @@ slideNumber:
   #  "h/v":  horizontal / vertical slide number
   #    "c":  flattened slide number
   #  "c/t":  flattened slide number / total slides
-  # "none":  dont't show slide numbers
+  # "none":  don't show slide numbers
   format:    "c/t"
 ```
 
@@ -124,9 +124,7 @@ slideNumber:
 
 reveal.js comes with a speaker notes plug-in which can be used to present per-slide notes in a separate browser window. The notes window also gives you a preview of the next upcoming slide so it may be helpful even if you haven't written any notes. Press the 's' key on your keyboard to open the notes window.
 
-Notes are defined by appending an ```<aside>``` element to a slide as seen below. You can add the ```markdown="1"``` attribute to the aside element if you prefer writing notes using Markdown.
-
-When used locally, this feature requires that reveal.js [runs from a local web server](#full-setup).
+Notes are defined by appending an ```<aside>``` element to a slide as seen below. You can add the ```markdown="1"``` attribute to the aside element if you prefer writing notes using Markdown:
 
 ```html
 ---
@@ -140,12 +138,20 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 </aside>
 ```
 
+When used locally, this feature requires that reveal.js [runs from a local web server](//github.com/hakimel/reveal.js#full-setup).
+
 ## Runtime Dependencies
+
+### For running on GitHub pages:
+
+Create a branch `gh-pages` in your repository.
+
+Put the line `gem 'github-pages'` in your `Gemfile`.
 
 ### For running Jekyll on your server:
 
 - Commander: Command-line interface constructor (Ruby)
-- Colorator: Colourizes command line output (Ruby)
+- Colorator: Colorizes command line output (Ruby)
 - Classifier: Generating related posts (Ruby)
 - Directory Watcher: Auto-regeneration of sites (Ruby)
 - Kramdown: Default Markdown engine (Ruby)
@@ -154,10 +160,6 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 - Safe YAML: YAML Parser built for security (Ruby)
 - Sass: CSS extension language (Ruby)
 - CoffeeScript: compiling to JavaScript (Ruby)
-
-### For running on GitHub pages:
-
-- `gem 'github-pages'` in your `Gemfile`
 
 ### For running reveal.js:
 
