@@ -7,6 +7,91 @@ Transforms Markdown files into presentation slides using [reveal.js](#revealjs) 
 
 Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)** (how to use Jekyll written in German).
 
+## Howto
+
+### Get reveal-jekyll
+
+#### On GitHub:
+
+For GitHub pages create a repository called `gh-pages` following the instructions [get started with GitHub Pages](//pages.github.com/).
+
+#### With Jekyll:
+
+Install [RubyGems](//rubygems.org/pages/download) for your system.
+
+Clone [reveal-jekyll](//github.com/tasmo/reveal-jekyll) with submodule reveal.js (recommended):
+
+```shell
+git clone --recursive --depth 1 https://github.com/tasmo/reveal-jekyll.git
+```
+
+…or just download the [zip file](//github.com/tasmo/reveal-jekyll/archive/master.zip).
+
+Make sure you have a `Gemfile` in the root of your project containing at least:
+
+```ruby
+source "https://rubygems.org"
+
+gem 'github-pages'
+```
+
+Install [Bundler](http://bundler.io/) and the dependencies:
+
+```shell
+gem install bundler \
+bundle install
+```
+
+### Write your slides
+
+Put your Markdown slides in the _\_posts_ folder.  
+Name the files in order with pattern `N-N-N-TITLE.md` like:
+
+```text
+1-1-1-start.md
+1-1-1-intro.md
+…
+3-1-2-third-topic-second-slide.md
+…
+9-9-8-end.md
+9-9-9-very-last-slide.md
+```
+
+Write the slide's header in [Front-matter](http://jekyllrb.com/docs/frontmatter/) and put the Markdown formatted content below. In the header you need at least the `layout: slide` attribute:
+
+```markdown
+---
+layout: slide
+title:
+---
+
+MARKDOWN_FOMATTED_SLIDE_CONTENT
+```
+
+### Personalize
+
+In the `_config.yml` give your slide show an name, author's name and a description:
+
+```yml
+title:       reveal-jekyll
+author:      Thomas Friese
+description: Reveal.js for Jekyll with Solarized Color theme
+```
+
+### Start your slide show
+
+On GitHub Pages you are done. Just watch `https://YOUR_GITHUB_NAME.github.io/`.
+
+An your local machine run:
+
+```shell
+bundle exec jekyll serve
+```
+
+…and go to `http://127.0.0.1:4000/`.
+
+***
+
 ## [reveal.js](http://lab.hakim.se/reveal-js/)
 
 A framework for easily creating beautiful presentations using HTML.
@@ -35,7 +120,7 @@ A framework for easily creating beautiful presentations using HTML.
 
 ## Differences and Limitations
 
-### Slide Attributes
+### Slide attributes
 
 Attributes to the slide `<section>` elements are written in the [Front-matter](http://jekyllrb.com/docs/frontmatter/):
 
@@ -67,7 +152,7 @@ Fragment 2 text
 
 Fragments can be nested.
 
-### Vertical Slides
+### Vertical slides
 
 For vertical scrolling you need to leave the `title:` blank. All content on vertical slides must be wrapped in HTML `<section>` blocks:
 
@@ -120,7 +205,7 @@ slideNumber:
   format:    "c/t"
 ```
 
-### Speaker Notes
+### Speaker notes
 
 reveal.js comes with a speaker notes plug-in which can be used to present per-slide notes in a separate browser window. The notes window also gives you a preview of the next upcoming slide so it may be helpful even if you haven't written any notes. Press the 's' key on your keyboard to open the notes window.
 
@@ -140,15 +225,11 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 
 When used locally, this feature requires that reveal.js [runs from a local web server](//github.com/hakimel/reveal.js#full-setup).
 
-## Runtime Dependencies
+***
 
-### For running on GitHub pages:
+## Runtime dependencies for development
 
-Create a branch `gh-pages` in your repository.
-
-Put the line `gem 'github-pages'` in your `Gemfile`.
-
-### For running Jekyll on your server:
+### Running Jekyll on your server:
 
 - Commander: Command-line interface constructor (Ruby)
 - Colorator: Colorizes command line output (Ruby)
@@ -161,7 +242,7 @@ Put the line `gem 'github-pages'` in your `Gemfile`.
 - Sass: CSS extension language (Ruby)
 - CoffeeScript: compiling to JavaScript (Ruby)
 
-### For running reveal.js:
+### Running reveal.js:
 
 Reveal.js doesn't _rely_ on any third party scripts to work but a few optional libraries are included by default. These libraries are loaded as dependencies in the order they appear, for example:
 

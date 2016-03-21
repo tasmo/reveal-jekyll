@@ -14,9 +14,10 @@ kramdown:
 #gems:
 #  - jemoji
 
+## personalize your slide show
 title:       reveal-jekyll
 author:      Thomas Friese
-description: Reveal.js for Jekyll with Solarized theme
+description: Reveal.js for Jekyll with Solarized Color theme
 
 sass:
   style:     :compressed
