@@ -199,7 +199,11 @@ You can add your own extensions using the same syntax. The following properties 
 [reveal.js](//github.com/hakimel/reveal.js): [MIT licensed](//github.com/hakimel/reveal.js/blob/master/LICENSE)  
 Copyright (C) 2016 Hakim El Hattab, http://hakim.se
 
-[reveal-jekyll](//github.com/tasmo/reveal-jekyll) contains the third party fonts [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)), [Font Awesome](//github.com/FortAwesome/Font-Awesome) ([License: SIL OFL 1.1](http://fontawesome.io/license/)) and the color scheme [Solarized colors](//github.com/altercation/solarized) ([MIT License](//github.com/altercation/solarized/blob/master/LICENSE)).
+[reveal-jekyll](//github.com/tasmo/reveal-jekyll) contains the third party fonts
+ - [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)),
+ - [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) ([Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)),
+ - [Font Awesome](//github.com/FortAwesome/Font-Awesome) ([License: SIL OFL 1.1](http://fontawesome.io/license/))
+and the color scheme [Solarized Colors](//github.com/altercation/solarized) ([MIT License](//github.com/altercation/solarized/blob/master/LICENSE)).
 
 [reveal-jekyll](//github.com/tasmo/reveal-jekyll): [MIT licensed](//github.com/tasmo/reveal-jekyll/blob/master/LICENSE)  
 Copyright (C) 2016 Thomas Friese, http://tasmo.rocks
