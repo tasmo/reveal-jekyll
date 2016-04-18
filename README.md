@@ -19,6 +19,12 @@ To set up a [project site](https://help.github.com/articles/user-organization-an
 
 If you want to instead set up a user or organization site, which will be accessible as `https://<yourname>.github.io/`, name your fork with your user or organisation name like `<yourname>.github.io`. In this case your site will build off the master branch.
 
+You can also host as a [project page](https://help.github.com/articles/user-organization-and-project-pages/#project-pages):
+
+- Clone this repo with a name like `mytalk`
+- Delete the `gh-pages` branch, create a new `gh-pages` branch off of `master`, and set `gh-pages` as the default branch. You can do all this through the Github web UI (TODO: details)
+- Set `baseurl` to `/mytalk` in `_config.yml`. This makes sure all the asset links work.
+
 ##### For an Existing Repository
 
 - clone your repository
