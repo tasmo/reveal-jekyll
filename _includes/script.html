@@ -1,8 +1,9 @@
-<script src="/reveal.js/lib/js/head.min.js"></script>
-<script src="/reveal.js/js/reveal.js"></script>
+<script src="{{ site.baseurl }}/reveal.js/lib/js/head.min.js"></script>
+<script src="{{ site.baseurl }}/reveal.js/js/reveal.js"></script>
 
 <!-- reveal.js init -->
 <script>
+  var baseUrl = "{{ site.baseurl }}"
   // Full list of configuration options available here:
   // https://github.com/hakimel/reveal.js#configuration
   Reveal.initialize({
@@ -17,19 +18,19 @@
     // Optional libraries used to extend on reveal.js
     dependencies: [
       // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-      { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: baseUrl + '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
       // Zoom in and out with Alt+click
-      { src: '/reveal.js/plugin/zoom-js/zoom.js', async: true },
+      { src: baseUrl + '/reveal.js/plugin/zoom-js/zoom.js', async: true },
 
       // Speaker notes
-      { src: '/reveal.js/plugin/notes/notes.js', async: true },
+      { src: baseUrl + '/reveal.js/plugin/notes/notes.js', async: true },
 
       // Remote control your reveal.js presentation using a touch device
-      //{ src: '/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+      //{ src: baseUrl + '/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
 
       // MathJax
-      { src: '/reveal.js/plugin/math/math.js', async: true }
+      { src: baseUrl + '/reveal.js/plugin/math/math.js', async: true }
     ]
   });
 
