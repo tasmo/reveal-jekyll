@@ -1,5 +1,7 @@
 timezone:    Europe/Berlin
 future:      false
+# Set baseurl to the base path of the site eg "/mytalk"
+baseurl:     ""
 # The allowed values are 'rouge', 'pygments' or null.
 highlighter: rouge
 # markdown - Valid options are [ maruku | rdiscount | kramdown | redcarpet ]
@@ -11,17 +13,29 @@ kramdown:
   ## for german: "sbquo,lsquo,bdquo,ldquo"
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
-title:       presentCode
+#gems:
+#  - jemoji
+
+## personalize your slide show
+title:       reveal-jekyll
 author:      Thomas Friese
-description: Reveal.js for Jekyll with Solarized theme
+description: Reveal.js for Jekyll with Solarized Color theme
 
 sass:
-  sass_dir:  _sass
   style:     :compressed
 
 ## solarized variant (dark/light)
 solarized:
   theme:     dark
+
+slideNumber:
+  # Slide number formatting can be configured using these variables:
+  #  "h.v":  horizontal . vertical slide number (default)
+  #  "h/v":  horizontal / vertical slide number
+  #    "c":  flattened slide number
+  #  "c/t":  flattened slide number / total slides
+  # "none":  dont't show slide numbers
+  format:    "c/t"
 
 ## Reveal.initialize
 ## At the end of your page Jekyll initializes reveal by running the following code. Note that all config values are optional and will default as specified below.
@@ -87,5 +101,16 @@ reveal:
   minScale: 0.2
   maxScale: 1.5
 
-include: [".htaccess"]
-exclude: ["package.json", "node_modules", "Gemfile", "README.md", "LICENSE", "reveal-jekyll.iml"]
+exclude: [
+  "Gemfile",
+  "Gemfile.lock",
+  "vendor",
+  "reveal.js/test",
+  "reveal.js/index.html",
+  "reveal.js/README.md",
+  "reveal.js/bower.json",
+  "reveal.js/Gruntfile.js",
+  "reveal.js/CONTRIBUTING.md",
+  "reveal.js/LICENSE",
+  "reveal.js/package.json"
+]

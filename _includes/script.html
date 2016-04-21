@@ -1,8 +1,9 @@
-<script src="/reveal.js/lib/js/head.min.js"></script>
-<script src="/reveal.js/js/reveal.min.js"></script>
+<script src="{{ site.baseurl }}/reveal.js/lib/js/head.min.js"></script>
+<script src="{{ site.baseurl }}/reveal.js/js/reveal.js"></script>
 
 <!-- reveal.js init -->
 <script>
+  var baseUrl = "{{ site.baseurl }}"
   // Full list of configuration options available here:
   // https://github.com/hakimel/reveal.js#configuration
   Reveal.initialize({
@@ -17,30 +18,40 @@
     // Optional libraries used to extend on reveal.js
     dependencies: [
       // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-      { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: baseUrl + '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
       // Zoom in and out with Alt+click
-      { src: '/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: baseUrl + '/reveal.js/plugin/zoom-js/zoom.js', async: true },
 
       // Speaker notes
-      { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: baseUrl + '/reveal.js/plugin/notes/notes.js', async: true },
 
       // Remote control your reveal.js presentation using a touch device
-      //{ src: '/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+      //{ src: baseUrl + '/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
 
       // MathJax
-      { src: '/reveal.js/plugin/math/math.js', async: true }
+      { src: baseUrl + '/reveal.js/plugin/math/math.js', async: true }
     ]
   });
+
+  {% if site.slideNumber.format and site.slideNumber.format != "none" %}
+  // Shows the slide number using default formatting
+  Reveal.configure({ slideNumber: true });
+  Reveal.configure({ slideNumber: '{{ site.slideNumber.format }}' });
+  {% endif %}
 </script>
 <!-- End reveal.js init -->
 
 <!-- Fontawesome -->
 <script type="text/javascript">
   $(document).ready(function() {
+    //$("a[href*='youtube.com/']").prepend( $( "<i class='fa fa-youtube-play'>&nbsp;</i>" ) );
+    //$("a[href*='vimeo.com/']").prepend( $( "<i class='fa fa-vimeo-square'>&nbsp;</i>" ) );
+    //$("a[href$='/download']").prepend( $( "<i class='fa fa-cloud-download'>&nbsp;</i>" ) );
+    //$("a.download").prepend( $( "<i class='fa fa-cloud-download'>&nbsp;</i>" ) );
     $("a.external").append( $( "<i class='fa fa-external-link'></i>" ) );
-    $("a.external,a.twitter").attr( "target","_blank" );
     $("a.twitter").append( $( "<i class='fa fa-twitter'></i>" ) );
+    $("a.github").append( $( "<i class='fa fa-github'></i>" ) );
     $("blockquote").prepend( $( "<i class='fa fa-quote-left'></i>" ) );
     $("a.button.lighter").click( function() { $("html.dark").removeClass("dark").addClass("light"); });
     $("a.button.darker").click( function() { $("html.light").removeClass("light").addClass("dark"); });

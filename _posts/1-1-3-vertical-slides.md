@@ -1,6 +1,6 @@
 ---
 layout: slide
-title:
+title: ""
 ---
 
 <section markdown="1">
