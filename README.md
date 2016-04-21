@@ -11,13 +11,13 @@ Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)** (how to use J
 
 ### Get reveal-jekyll
 
-#### On GitHub:
+#### Hosting on Github Pages
 
 Follow the instructions on [get started with GitHub Pages](//pages.github.com/).
 
-##### For GitHub Pages
+To set up a [project site](https://help.github.com/articles/user-organization-and-project-pages/#project-pages), which will be accessible as `https://<yourname>.github.io/<projectname>`, simply fork [reveal-jekyll](//github.com/tasmo/reveal-jekyll) and name it whatever you like. Your site will be built from the `gh-pages` branch, so you should [set that as the default branch](https://help.github.com/articles/setting-the-default-branch/).
 
-Fork [reveal-jekyll](//github.com/tasmo/reveal-jekyll) and name it with your user or organisation name like `<yourname>.github.io`.
+If you want to instead set up a user or organization site, which will be accessible as `https://<yourname>.github.io/`, name your fork with your user or organisation name like `<yourname>.github.io`. In this case your site will build off the master branch.
 
 ##### For an Existing Repository
 
