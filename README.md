@@ -15,7 +15,11 @@ Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)** (how to use J
 
 Follow the instructions on [get started with GitHub Pages](//pages.github.com/).
 
+##### As a User or Organization Site
+
 To set up a user or organization site `https://<yourname>.github.io/`, fork [reveal-jekyll](//github.com/tasmo/reveal-jekyll) and name your fork with your user or organisation name like `<yourname>.github.io`. Your site will build off the master branch.
+
+##### As a Project Site
 
 To set up a [project site](https://help.github.com/articles/user-organization-and-project-pages/#project-pages) `https://<yourname>.github.io/<projectname>`:
 
