@@ -24,7 +24,8 @@ Dem Server den öffentlichen Key übergeben
 $ rsync -v -e ssh --archive ~/.ssh/id_rsa.pub _SERVER_:new_key.pub
 $ ssh _SERVER_ "test -d .ssh || mkdir .ssh && chmod 700 .ssh"
 $ ssh _SERVER_ "cat new_key.pub >> .ssh/authorized_keys"
-$ ssh _SERVER_ rm new_key.pub
+$ ssh _SERVER_ "shred -u new_key.pub"
+$ ssh-add ~/.ssh/id_rsa.pub
 {% endhighlight %}
 </div>
 
