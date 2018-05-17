@@ -29,7 +29,7 @@ Fork [reveal-jekyll](//github.com/tasmo/reveal-jekyll) and name it with your use
 - clean the directory from uncached files
 - merge [reveal-jekyll](//github.com/tasmo/reveal-jekyll)/master with your `<repository>/gh-pages`
 
-~~~ shell
+```shell
 git clone git@github.com/<yourname>/<repository>.git
 cd <repository>
 git remote add upstream https://github.com/tasmo/reveal-jekyll.git
@@ -37,7 +37,7 @@ git checkout --orphan gh-pages
 git rm --cached -r .
 git clean -fdx
 git merge upstream/master
-~~~
+```
 
 #### With Jekyll:
 
@@ -45,62 +45,62 @@ Install [RubyGems](//rubygems.org/pages/download) for your system.
 
 Clone [reveal-jekyll](//github.com/tasmo/reveal-jekyll) with submodule reveal.js (recommended):
 
-~~~ shell
+```shell
 git clone --recursive --depth 1 https://github.com/tasmo/reveal-jekyll.git
-~~~
+```
 
 …or just download the [zip file](//github.com/tasmo/reveal-jekyll/archive/master.zip).
 
 Make sure you have a `Gemfile` in the root of your project containing at least:
 
-~~~ ruby
+```ruby
 source "https://rubygems.org"
 
 gem 'github-pages'
-~~~
+```
 
 Install [Bundler](http://bundler.io/) and the dependencies:
 
-~~~ shell
+```shell
 gem install bundler \
 bundle install
-~~~
+```
 
 ### Write your slides
 
 Put your Markdown slides in the _\_posts_ folder.  
-Name the files in order with pattern `N-N-N-TITLE.md` like:
+Name the files in order with pattern `YEAR-MONTH-DAY-TITLE.md` like:
 
-~~~ text
-1-1-1-start.md
-1-1-1-intro.md
+```text
+2014-1-1-start.md
+2014-1-1-intro.md
 …
-3-1-2-third-topic-second-slide.md
+2014-3-2-third-topic-second-slide.md
 …
-9-9-8-end.md
-9-9-9-very-last-slide.md
-~~~
+2014-9-8-end.md
+2014-9-9-very-last-slide.md
+```
 
 Write the slide's header in [Front-matter](http://jekyllrb.com/docs/frontmatter/) and put the Markdown formatted content below. In the header you need at least the `layout: slide` attribute:
 
-~~~ markdown
+```markdown
 ---
 layout: slide
 title:
 ---
 
 MARKDOWN_FOMATTED_SLIDE_CONTENT
-~~~
+```
 
 ### Personalize
 
 In the `_config.yml` give your slide show an name, author's name and a description:
 
-~~~ yml
+```yml
 title:       reveal-jekyll
 author:      Thomas Friese
 description: Reveal.js for Jekyll with Solarized Color theme
-~~~
+```
 
 ### Start your slide show
 
@@ -108,9 +108,9 @@ On GitHub Pages you are done. Just watch `https://YOUR_GITHUB_NAME.github.io/`.
 
 An your local machine run:
 
-~~~ shell
+```shell
 bundle exec jekyll serve
-~~~
+```
 
 …and go to `http://127.0.0.1:4000/`.
 
@@ -148,7 +148,7 @@ A framework for easily creating beautiful presentations using HTML.
 
 Attributes to the slide `<section>` elements are written in the [Front-matter](http://jekyllrb.com/docs/frontmatter/):
 
-~~~ markdown
+```markdown
 ---
 layout: slide
 title: Background Transitions
@@ -157,13 +157,13 @@ data:
   background: 'red'
   background-transition: slide
 ---
-~~~
+```
 
 ### Fragments
 
 Markdown fragments must be covered in a HTML block element using the attribute `markdown="1"`:
 
-~~~ html
+```html
 <div markdown="1" class="fragment">
 ## Markdown Heading
  
@@ -172,7 +172,7 @@ Fragment 1 text
 <div markdown="1" class="fragment">
 Fragment 2 text
 </div>
-~~~
+```
 
 Fragments can be nested.
 
@@ -180,7 +180,7 @@ Fragments can be nested.
 
 For vertical scrolling you need to leave the `title:` blank. All content on vertical slides must be wrapped in HTML `<section>` blocks:
 
-~~~ html
+```html
 ---
 layout: slide
 title:
@@ -192,7 +192,7 @@ title:
 <section markdown="1">
 ## Bottom Slide
 </section>
-~~~
+```
 
 ### Configuration
 
@@ -204,7 +204,7 @@ The configuration will be built in the `<script />` block at the bottom of the `
 
 reveal-jekyll uses [kramdown](//github.com/gettalong/kramdown) for Markdown rendering and [rouge](//github.com/jneen/rouge) for syntax highlighting. Below is an example with CoffeeScript code that will be syntax highlighted:
 
-~~~ coffee
+```coffee
 {% highlight coffee %}
 # Objects:
 math =
@@ -212,13 +212,13 @@ math =
   square: square
   cube:   (x) -> x * square x
 {% endhighlight %}
-~~~
+```
 
 ### Slide numbers
 
 You can show slide numbers by selecting a format in the `_config.yml` file:
 
-~~~ coffee
+```coffee
 slideNumber:
   # Slide number formatting can be configured using these variables:
   #  "h.v":  horizontal . vertical slide number (default)
@@ -227,7 +227,7 @@ slideNumber:
   #  "c/t":  flattened slide number / total slides
   # "none":  don't show slide numbers
   format:    "c/t"
-~~~
+```
 
 ### Speaker notes
 
@@ -235,7 +235,7 @@ reveal.js comes with a speaker notes plug-in which can be used to present per-sl
 
 Notes are defined by appending an `<aside>` element to a slide as seen below. You can add the `markdown="1"` attribute to the aside element if you prefer writing notes using Markdown:
 
-~~~ html
+```html
 ---
 layout: slide
 ---
@@ -245,7 +245,7 @@ Slide text...
 <aside class="notes" markdown="1">
 Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 </aside>
-~~~
+```
 
 When used locally, this feature requires that reveal.js [runs from a local web server](//github.com/hakimel/reveal.js#full-setup).
 
@@ -270,7 +270,7 @@ When used locally, this feature requires that reveal.js [runs from a local web s
 
 Reveal.js doesn't _rely_ on any third party scripts to work but a few optional libraries are included by default. These libraries are loaded as dependencies in the order they appear, for example:
 
-~~~ javascript
+```javascript
 Reveal.initialize({
   dependencies: [
     // Cross-browser shim that fully implements classList - //github.com/eligrey/classList.js/
@@ -289,7 +289,7 @@ Reveal.initialize({
     { src: 'plugin/math/math.js', async: true }
   ]
 });
-~~~
+```
 
 You can add your own extensions using the same syntax. The following properties are available for each dependency object:
 - **src**: Path to the script to load
