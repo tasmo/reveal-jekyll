@@ -11,13 +11,21 @@ Try the **[DEMO presentation](http://gh.tasmo.de/reveal-jekyll/)** (how to use J
 
 ### Get reveal-jekyll
 
-#### On GitHub:
+#### Hosting on Github Pages
 
 Follow the instructions on [get started with GitHub Pages](//pages.github.com/).
 
-##### For GitHub Pages
+##### As a User or Organization Site
 
-Fork [reveal-jekyll](//github.com/tasmo/reveal-jekyll) and name it with your user or organisation name like `<yourname>.github.io`.
+To set up a user or organization site `https://${yourname}.github.io/`, fork [reveal-jekyll](//github.com/tasmo/reveal-jekyll) and name your fork with your user or organisation name like `${yourname}.github.io`. Your site will build off the master branch.
+
+##### As a Project Site
+
+To set up a [project site](https://help.github.com/articles/user-organization-and-project-pages/#project-pages) `https://${yourname}.github.io/${projectname}`:
+
+ - Fork as above, but name your fork with whatever `${projectname}` you want.
+ - Your site will build from the `gh-pages` branch, so you should [set that as the default branch](https://help.github.com/articles/setting-the-default-branch/).
+ - In [\_config.yml](./_config.yml) in your `gh-pages` branch, change `baseurl: ""` to `baseurl: /${projectname}`. This is [needed](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/) to construct asset include and internal link URLs correctly when you are serving your site from a non-root path.
 
 ##### For an Existing Repository
 
@@ -27,11 +35,11 @@ Fork [reveal-jekyll](//github.com/tasmo/reveal-jekyll) and name it with your use
 - create an empty branch named `gh-pages`
 - delete all cached files of new `gh-pages` branch from git
 - clean the directory from uncached files
-- merge [reveal-jekyll](//github.com/tasmo/reveal-jekyll)/master with your `<repository>/gh-pages`
+- merge [reveal-jekyll](//github.com/tasmo/reveal-jekyll)/master with your `${repository}/gh-pages`
 
 ```shell
-git clone git@github.com/<yourname>/<repository>.git
-cd <repository>
+git clone git@github.com/${yourname}/${repository}.git
+cd ${repository}
 git remote add upstream https://github.com/tasmo/reveal-jekyll.git
 git checkout --orphan gh-pages
 git rm --cached -r .
@@ -68,7 +76,7 @@ bundle install
 
 ### Write your slides
 
-Put your Markdown slides in the _\_posts_ folder.  
+Put your Markdown slides in the `_posts` folder.  
 Name the files in order with pattern `YEAR-MONTH-DAY-TITLE.md` like:
 
 ```text
@@ -114,7 +122,7 @@ bundle exec jekyll serve
 
 …and go to `http://127.0.0.1:4000/`.
 
-***
+---
 
 ## [reveal.js](http://lab.hakim.se/reveal-js/)
 
@@ -249,7 +257,7 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you ca
 
 When used locally, this feature requires that reveal.js [runs from a local web server](//github.com/hakimel/reveal.js#full-setup).
 
-***
+---
 
 ## Runtime dependencies for development
 
