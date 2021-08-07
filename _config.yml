@@ -304,15 +304,16 @@ reveal:
 exclude: [
   "Gemfile",
   "Gemfile.lock",
+  "default.nix",
   "vendor",
   "README.md",
   "LICENSE",
-  "reveal.js/test",
-  "reveal.js/index.html",
-  "reveal.js/README.md",
-  "reveal.js/bower.json",
-  "reveal.js/Gruntfile.js",
   "reveal.js/CONTRIBUTING.md",
   "reveal.js/LICENSE",
-  "reveal.js/package.json"
+  "reveal.js/README.md",
+  "reveal.js/gulpfile.js",
+  "reveal.js/index.html",
+  "reveal.js/package-lock.json",
+  "reveal.js/package.json",
+  "reveal.js/test"
 ]
