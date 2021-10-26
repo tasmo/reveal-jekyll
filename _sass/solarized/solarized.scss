@@ -131,6 +131,15 @@ $quoteFont: 'droid_serifitalic', cursive;
     }
     figure.highlight {
       background: $rebase3;
+      border-radius: .4em;
+      pre {
+        border-radius: .4em;
+        code {
+          border-radius: .4em;
+          max-height: 80%;
+          white-space: pre-wrap;
+        }
+      }
     }
   }
 }
