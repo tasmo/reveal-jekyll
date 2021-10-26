@@ -10,7 +10,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="{{ site.github.url }}/assets/css/style.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/highlight/base16/solarized-light.css">
 <!-- jQuery -->
 <script src="{{ site.github.url }}/assets/js/jquery-3.5.1.min.js"></script>
 
@@ -20,11 +21,11 @@
 		var link = document.createElement( 'link' );
 		link.rel = 'stylesheet';
 		link.type = 'text/css';
-		link.href = '{{ site.github.url }}/reveal.js/css/print/pdf.css';
+		link.href = '{{ site.baseurl }}/reveal.js/css/print/pdf.css';
 		document.getElementsByTagName( 'head' )[0].appendChild( link );
 	}
 </script>
 
 <!--[if lt IE 9]>
-<script src="{{ site.github.url }}/reveal.js/lib/js/html5shiv.js"></script>
+<script src="{{ site.baseurl }}/reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
