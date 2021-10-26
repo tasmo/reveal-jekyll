@@ -2,9 +2,7 @@ timezone:    Europe/Berlin
 future:      false
 # Set baseurl to the base path of the site eg "/mytalk"
 baseurl:     ""
-# The allowed values are 'rouge', 'pygments' or null.
-highlighter: rouge
-# markdown - Valid options are [ maruku | rdiscount | kramdown | redcarpet ]
+highlighter: ""
 markdown:    kramdown
 lsi:         false
 permalink:   "/:title"
@@ -304,15 +302,16 @@ reveal:
 exclude: [
   "Gemfile",
   "Gemfile.lock",
+  "default.nix",
   "vendor",
   "README.md",
   "LICENSE",
-  "reveal.js/test",
-  "reveal.js/index.html",
-  "reveal.js/README.md",
-  "reveal.js/bower.json",
-  "reveal.js/Gruntfile.js",
   "reveal.js/CONTRIBUTING.md",
   "reveal.js/LICENSE",
-  "reveal.js/package.json"
+  "reveal.js/README.md",
+  "reveal.js/gulpfile.js",
+  "reveal.js/index.html",
+  "reveal.js/package-lock.json",
+  "reveal.js/package.json",
+  "reveal.js/test"
 ]
