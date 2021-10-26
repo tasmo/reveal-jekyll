@@ -131,6 +131,24 @@ $quoteFont: 'droid_serifitalic', cursive;
     }
     figure.highlight {
       background: $rebase3;
+      border-radius: .4em;
+      pre {
+        border-radius: .4em;
+        code {
+          border-radius: .4em;
+          max-height: 80%;
+          white-space: pre-wrap;
+        }
+      }
+    }
+    pre {
+      &.code-wrapper,
+      code {
+        border-radius: 1em;
+      }
+      code {
+        max-height: 80%;
+      }
     }
   }
 }
@@ -185,15 +203,18 @@ html * {
     font-weight: normal;
   }
   pre code {
-    padding: 0;
+    padding: .7em 1em .8em;
     overflow: hidden;
     word-wrap: break-word;
     white-space: pre-wrap;
   }
+  :not(figure) > pre.code-wrapper > code {
+    @include border-radius( 0.4em );
+  }
+  :not(figure) > pre.code-wrapper,
   figure.highlight {
     width: 90%;
     margin: .5em auto;
-    padding: .7em 1em .8em;
     text-shadow: none;
     box-shadow: 0px 0px 6px rgba( 0,0,0,0.3 );
     @include border-radius( 0.4em );

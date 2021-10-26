@@ -1,7 +1,7 @@
 timezone:    Europe/Berlin
 future:      false
 # The allowed values are 'rouge', 'pygments' or null.
-highlighter: rouge
+highlighter: ""
 # markdown - Valid options are [ maruku | rdiscount | kramdown | redcarpet ]
 markdown:    kramdown
 lsi:         false
