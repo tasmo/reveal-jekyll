@@ -10,6 +10,8 @@ permalink:   "/:title"
 kramdown:
   ## for german: "sbquo,lsquo,bdquo,ldquo"
   smart_quotes: lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter_opts:
+    disable: true
 
 #gems:
 #  - jemoji
