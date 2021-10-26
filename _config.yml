@@ -9,6 +9,8 @@ permalink:   "/:title"
 
 kramdown:
   smart_quotes: sbquo,lsquo,bdquo,ldquo
+  syntax_highlighter_opts:
+    disable: true
 
 #gems:
 #  - jemoji

@@ -210,7 +210,7 @@ The configuration will be built in the `<script />` block at the bottom of the `
 
 ## Code Syntax Highlighting
 
-reveal-jekyll uses [Kramdown](https://github.com/gettalong/kramdown) for Markdown rendering and [Rouge]([//github.com/jneen/rouge](https://github.com/rouge-ruby/rouge)) for syntax highlighting. To insert a highlighted code block surround the code with the [Liquid](https://shopify.github.io/liquid/) tag `highlight`:
+To insert a highlighted code block the code can be surrounded with the [Liquid](https://shopify.github.io/liquid/) tag `highlight`:
 
 ```liquid
 {% highlight coffee %}
@@ -222,7 +222,7 @@ math =
 {% endhighlight %}
 ```
 
-To use the [Reveal.js's preferred method](https://revealjs.com/code/) via [highlight.js](https://highlightjs.org/) it is possible to surround the code with HTML nodes `pre` and `code` using the class `language-*` adding optional `data` tags:
+Insted of Rouge for highlighting the code, reveal-jekyll uses the [Reveal.js's preferred method](https://revealjs.com/code/) via [highlight.js](https://highlightjs.org/). To use all options it is possible to surround the code with HTML nodes `pre` and `code` using the class `language-*` adding optional `data` tags:
 
 ```html
 <pre><code class="language-coffee" data-trim data-noescape data-line-numbers="1|3-5">
