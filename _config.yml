@@ -22,7 +22,7 @@ author:      Thomas Friese
 description: Reveal.js for Jekyll with Solarized Color theme
 
 sass:
-  style:     :compressed
+  style:     compressed
 
 ## solarized variant (dark/light)
 solarized:
