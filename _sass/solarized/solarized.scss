@@ -77,7 +77,7 @@ $italicFont: 'open_sanslight_italic', 'Open Sans', Arial, sans-serif;
 $quoteFont: 'droid_serifitalic', cursive;
 
 // reveal.js theme
-@import "../../reveal.js/css/reveal";
+@import "../../reveal.js/dist/reveal.css";
 // Theme template ------------------------------
 @import "../../reveal.js/css/theme/template/theme";
 // ---------------------------------------------
