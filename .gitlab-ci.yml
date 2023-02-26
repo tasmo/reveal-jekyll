@@ -1,0 +1,21 @@
+image: ruby:latest
+
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+  GIT_SUBMODULE_STRATEGY: recursive
+  GIT_SUBMODULE_DEPTH: 1
+
+before_script:
+  - gem install bundler
+  - bundle install
+
+pages:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "pages"'

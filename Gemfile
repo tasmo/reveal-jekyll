@@ -1,3 +1,7 @@
 source "https://rubygems.org"
 
-gem 'github-pages'
+require 'json'
+require 'open-uri'
+
+gem "github-pages"
+gem 'sassc'
